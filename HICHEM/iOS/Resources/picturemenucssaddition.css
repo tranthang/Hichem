@@ -1,0 +1,119 @@
+ /*picturemenucssaddition*/
+  .header_page
+{
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+   background-position: initial initial;
+  background-repeat: initial initial;
+  padding-bottom: 12px;
+
+}
+.header_text
+{
+  font-style:italic;
+ font-family: 'Times New Roman', Times, serif;
+  font-size:22px;
+  padding-top:6px;
+  
+}
+ body > .picturemenupanel
+{
+box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  -webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+  padding:0px;
+width: 100%;
+margin: 0 auto;
+/*-webkit-tap-highlight-color:rgba(0,0,0,0.1);*/
+  text-align:center;
+
+}
+/* Portrait */@media screen and (orientation:portrait)
+{
+    body 
+{
+background-image:url(picture_page_background.png);
+  background-size:100% auto;
+ 
+}
+
+}
+/* Landscape */@media screen and (orientation: landscape)
+{
+    body 
+{
+ background-image:url(picture_background_landscape.png);
+  background-size:100% auto;
+ 
+}
+
+}
+.picturemenulist
+{
+   margin: 0 auto;
+padding:0;
+display:block;
+list-style:none;
+  
+}
+.picturemenuitem
+{
+    position: relative;
+font-family: Arial, Helvetica,sans-serif;
+padding:13px;
+margin:0px;
+width:26%;
+height:26%;
+float: left;
+padding-left:4px;
+display:inline-block;
+text-align: center;
+
+}
+.picturemenuitem .picturemenuimage
+{
+vertical-align:middle;
+height:55px;
+width:55px;
+margin:16px;
+display: inline-block;
+  
+}
+.picturemenulistcontainer
+{
+min-width:320px;
+width: auto;
+max-width:1024px;
+margin:0px auto;
+
+}
+@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait)  
+{
+ /* Tablet */.picturemenulist
+{
+min-width:766px;
+max-width:766px;
+border-bottom:none;
+border-right:none;
+  margin:62px;
+  background-image:url(picture_backround_ipad.png);
+
+}
+  @media only screen and (min-width: 361px) and (max-width: 480px) 
+{
+ /* Mobile (landscape)*/.picturemenulist
+{
+min-width:476px;
+max-width:476px;
+border:4px solid transparent;
+border-right: none;
+background-image:url(picture_page_background.png);
+}
+

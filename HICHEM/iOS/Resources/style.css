@@ -1,0 +1,180 @@
+body{font-size:14pt;line-height:;font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;background-color:#fcfcf9;width:100%;background-repeat:repeat;margin:0px;color:#49c1cc;direction:;background-image:url();-webkit-tap-highlight-color:#f70c2b;}
+p{padding-right: 4px;padding-left: 4px;}
+a{color:#666666;text-decoration:none;font-weight:bold;font-size:14pt;}
+a:visited{color:#666666;text-decoration:none;font-weight:bold;}
+h1{font-family: "Lucida Sans Unicode";font-size: 18pt;color: #474747;font-weight: regular;}
+h2{font-family: "Lucida Sans Unicode";font-size: 14pt;color: #474747;font-weight: regular;}
+h3{font-family: "Lucida Sans Unicode";font-size: 12pt;color: #474747;font-weight: bold;}
+li{font-family: "Lucida Sans Unicode";font-size: 11pt;font-style: normal;line-height: normal;padding: 0px;/*list-style-type: square;*/margin-bottom:10px;color: #666666;}
+.itemimage{border:solid 0px #aaa;max-width:100px;width: expression(this.width > 100 ? 100: true);vertical-align:middle;}
+ .iimage{border:solid 0px #aaa;max-width:100%;vertical-align:middle;}
+ol{list-style-type: decimal;}
+ul{list-style-type: square;}
+/*gridmenucssaddition*/ .gridmenuimagecontaineripad{               min-width:225px;        width:30%;}
+   .gridmenuimageipad{        padding: 0px;        margin:0px;        width:30%;        min-width:225px;}
+     .gridmenuitemBgipad{      min-width:225px;      width:100%;      text-align:center;      font-size:17px;      font-family:STHeitiTC-Light, Tahoma;      font-weight:100;      padding-top:10px;      padding-bottom:10px;      margin-top:-42px;      }
+.gridmenuimagecontainer{      min-width:298px;        width:100%;  position:relative;  z-index:0;  border-bottom: solid 2px #000}
+     .gridmenuimage{padding: 0px;margin:0px;width:100%;min-height:145px;       min-width:298px;        border:0px;  display: block    }
+     .gridmenuitemBg{      min-width:298px;      width:100%;      text-align:center;      font-size:19px;  position: absolute;  bottom: 0;padding: 12px 0 10px;  background:#211f1f;  background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(35,31,32,0.85) 100%);background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(35,31,32,0.85) 100%);background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(35,31,32,0.85) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6231f20',GradientType=0 );  color:#ffffff;  opacity:.9;  font-family:sans-serif;  font-weight:900;}
+    .gridmenuimagecontainer a{    -webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+/*buttonmenucssaddition*/            .buttonmenuitemcontainer{        width:291px;        height:55px;    color:#5b5e60;        display:block;        border-radius: 12px;       }
+     .buttonmenuitembackground{display:block;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;border-radius: 12px;width:270px;text-align:left;color:#5b5e60;font-size:18px;font-family:"HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,sans-serif;font-weight:100;padding-left:20px;line-height:56px;      -webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;      }
+         /*webkitmenucssaddition*/.detailspanel{border:solid 1px #aaa;padding:20px;background-color:#ffffff;}
+li > a[selected], li > a:active{background-color: blue !important;    background-repeat: no-repeat !important;    background-position: right center !important;    color: #FFFFFF !important;    background-image: url(listArrowSel.png) !important;}
+li > a[selected="progress"]{background-repeat: no-repeat !important;    background-position: right center !important;background-image: url(loading.gif) !important;}
+body > .WebKitPanel{box-sizing: border-box;    -webkit-box-sizing: border-box;    -moz-box-sizing: border-box;    padding: 8px; -webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+body > .toolbar{text-align:center;}
+.WebKitList{    position: relative; background: #FFFFFF;    -webkit-border-radius: 10px;    -moz-border-radius: 10px;    text-align: center;    font-size: 16px;margin:5px 0 15px 0;    padding: 0;   list-style:none;box-shadow: 1px 1px 17px 0px #B9B9B9;}
+.WebKitItem{    position: relative;    min-height: 42px;    -webkit-border-radius: 0;    -moz-border-radius: 0;    text-align: right;  margin:0; padding:0; border-width:0;   }
+   .WebKitPanel > ul > li:first-child a{ -webkit-border-top-right-radius:10px; -webkit-border-top-left-radius:10px; }
+.WebKitPanel > ul > li:last-child a{ -webkit-border-bottom-right-radius:10px; -webkit-border-bottom-left-radius:10px; border-bottom-width:1px !important; }
+.WebKitTitle{text-align:left; padding:11px 0 9px 10px; background:url(listArrow.png) center right no-repeat; display:block; text-decoration:none; overflow:hidden; text-overflow:ellipsis; color:#6f6f6f; font-weight:bold; font-size:17px; margin:0;border-bottom: 1px solid #E0E0E0;  border-top: 1px solid #E0E0E0;  margin-top:-1px; background-color:#fff; }
+.WebKitPanel > ul li:last-child{    border-bottom: none !important;}
+.WebKitPanel > ul > li:first-child a{ -webkit-border-top-right-radius:10px; -webkit-border-top-left-radius:10px; }
+.WebKitPanel > ul > li:last-child a{ -webkit-border-bottom-right-radius:10px; -webkit-border-bottom-left-radius:10px; border-bottom-width:1px !important; }
+.WebKitImage{vertical-align:middle; margin-left:-4px; margin-right:4px; height:24px;}
+/*stripesmenucssaddition*/.stripesmenulistcontainer{text-align:left;width:100%;}
+       .StripesMenuList{    text-align:left;    list-style:none;    margin:0px;    padding:0px;    margin-top:10px;}
+.StripesMenuItem{line-height: 35px;background: rgba(51, 51, 51, 0.6);margin-bottom:10px;}
+.StripesMenuTitle{ margin:0; display:block; font-size: 16px; font-weight:100; font-family:STHeitiTC-Light, Century Gothic; text-decoration:none; color:#fff; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
+.StripesMenuImage{ vertical-align:middle; margin-left:15px; margin-top:2px; margin-right:10px; margin-bottom:2px;}
+/*iconmenucssaddition2*/.iconmenulistcontainer{  padding: 0;  margin: 0;  list-style: none;border-top:solid 0.6px #afb2b9;}
+.iconmenucontainer{  border-bottom:solid 0.6px #afb2b9;  margin: 0;  background: url(menu-arrow.png) right 10px center / 24px no-repeat;}
+.iconmenuitemlink{  display:block;  font-size: 16px;  font-family: sans-serif;   font-weight: 100;  color:#000;  -webkit-touch-callout: none;  -webkit-user-select: none;  -khtml-user-select: none;  -moz-user-select: none;  -ms-user-select: none;  user-select: none;  -webkit-tap-highlight-color: rgba(0,0,0,0.1);}
+.iconmenuimgcontainer{  float:left;  max-width:50px;   padding: 13px;}
+ .iconmenuitemimage{  vertical-align: middle;  padding: 0;  height: 32px;  width: 32px;  border:0;}
+.iconmenuimgarrowcontainer{  float:right;   padding: 7px 10px 7px;   vertical-align: middle;display: none}
+.iconmenuimgarrow{  border: none;  max-width: 100%;  vertical-align: middle;  width: 10px;}
+.iconmenutitle{  font-size: 21px;  font-family: sans-serif;  font-weight: 100;  color:#000;  float:left;  padding: 19px 0;  margin: 0;  -webkit-touch-callout: none;  -webkit-user-select: none;  -khtml-user-select: none;  -moz-user-select: none;  -ms-user-select: none;  user-select: none;  -webkit-tap-highlight-color: rgba(0,0,0,0.1);color:#666666;font-size:14pt;}
+/*menucssaddition2*/table.menupagetypelistcontainer a{margin: -23px 0;padding:23px 0;display:block;text-align:left;font-size:17px;font-family:;font-weight:100;-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+  .menucontainer{  padding: 0px;  margin: 0px;  list-style: none;  -webkit-touch-callout: none;  -webkit-user-select: none;  -khtml-user-select: none;  -moz-user-select: none;  -ms-user-select: none;  user-select: none;  -webkit-tap-highlight-color: rgba(0,0,0,0.1);}
+.menucontainer *{vertical-align:middle;}
+.menuitem{  font-family: Arial, Helvetica, sans-serif;  margin: 0px;  padding: 0px;  border-bottom: solid .6px #afb2b9;  max-height: 86px;  background: url(menu-arrow.png) right 10px center / 24px no-repeat;}
+.menulink{  display: block;  text-decoration: none;  overflow: hidden;  position: relative;}
+.menuimgcontainer{  display: inline-block;}
+  .menuimage{  vertical-align: middle;  height: 54px;  margin: 4px 8px 4px 4px;}
+.menutextcontainer{  display: inline-block;  max-width:75%;}
+.menutext1{  margin: 0;    font-size: 21px;  line-height: 17px;  font-weight: 100;  color: #333;  font-family: sans-serif;}
+.menuimgarrow{  vertical-align: middle;  padding: 10px 10px 10px 0;  margin: auto;  position: absolute;  top: 0;  bottom: 0;  right: 0;}
+.headerlogo{  width: 100%;  position:relative;  z-index:1;  display:block}
+.logoimg{  width: 50%;  position: absolute;  top: 10px;  z-index: 2;  margin: auto;  left: 0;  right: 0}
+/*wpstartmenucssaddition*/.detailspanel{-webkit-border-top-right-radius:10px;-webkit-border-top-left-radius:10px;-webkit-border-bottom-right-radius:10px;-webkit-border-bottom-left-radius:10px;border:solid 1px #aaa;padding:20px;background-color:#ffffff;}
+li > a[selected], li > a:active{background-color: blue !important;    background-repeat: no-repeat !important;    background-position: right center !important;    color: #FFFFFF !important;    background-image: url(listArrowSel.png) !important;}
+li > a[selected="progress"]{background-repeat: no-repeat !important;    background-position: right center !important;background-image: url(loading.gif) !important;}
+body > .wpstartmenuPanel{box-sizing: border-box;    -webkit-box-sizing: border-box;    -moz-box-sizing: border-box;  -webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;  padding:5px;width: 320px;margin: 0 auto;-webkit-tap-highlight-color:rgba(0,0,0,0.1);}
+.wpstartmenuList{    position: relative;    padding: 0;   background: #FFFFFF;     text-align: center;    font-size: 10px;margin:0px 0 15px 0; list-style:none; background-color:transparent;}
+.wpstartmenulargeItem{    position: relative;    min-height: 42px;      text-align: right;font-family: arial, Helvetica,sans-serif; margin:4px;padding:0; background-color: #0050ef;width: 138px;height: 138px;float:left;}
+.wpstartmenulargeItem .wpstartmenuTitle{text-align:left; padding:5px; display:block; text-decoration:none; overflow:hidden; text-overflow:ellipsis;font-weight:bold; font-size:10px;color:#fff;margin:0;line-height: 22px;}
+.wpstartmenulargeItem .wpstartmenuImage{ vertical-align:middle; height:95px; width:95px; margin: 10px auto 0; display: block;}
+.wpstartmenumediumItem{    position: relative;    min-height: 42px;      text-align: right;font-family: arial, Helvetica,sans-serif; margin:4px;padding:0; background-color: #0050ef;width: 138px;height: 65px;float:left;}
+.wpstartmenumediumItem .wpstartmenuTitle{text-align:left; padding:5px; display:block; text-decoration:none; overflow:hidden; text-overflow:ellipsis;font-weight:bold; font-size:10px;color:#fff;margin:0;line-height: 10px;}
+.wpstartmenumediumItem .wpstartmenuImage{ vertical-align:middle; height:44px; margin: 0 auto; display: block;}
+.wpstartmenusmallItem{    position: relative;    min-height: 42px;      text-align: right;font-family: arial, Helvetica,sans-serif; margin:4px;padding:0; background-color: #0050ef;width: 65px;height: 65px;float:left;}
+.wpstartmenusmallItem .wpstartmenuTitle{text-align:left; padding:5px; display:block; text-decoration:none; overflow:hidden; text-overflow:ellipsis;font-weight:bold; font-size:10px;color:#fff;margin:0;line-height: 10px;}
+.wpstartmenusmallItem .wpstartmenuImage{ vertical-align:middle; height:34px; margin: 0 auto; display: block;}
+/*wpapplicationsmenucssaddition*/@font-face{font-family: 'SegoeUI';src: url('seguisb.ttf') format('truetype');}
+.detailspanel{-webkit-border-top-right-radius:10px;-webkit-border-top-left-radius:10px;-webkit-border-bottom-right-radius:10px;-webkit-border-bottom-left-radius:10px;border:solid 1px #aaa;padding:20px;background-color:#ffffff;}
+li > a[selected], li > a:active{background-color: blue !important;    background-repeat: no-repeat !important;    background-position: right center !important;    color: #FFFFFF !important;    background-image: url(listArrowSel.png) !important;}
+li > a[selected="progress"]{background-repeat: no-repeat !important;    background-position: right center !important;background-image: url(loading.gif) !important;}
+body > .WPapplicationsPanel{box-sizing: border-box;    -webkit-box-sizing: border-box;    -moz-box-sizing: border-box;  -webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;  }
+.WPapplicationsList{    position: relative;    margin: 0 0 20px 0;    padding: 0;   background: #FFFFFF;    -webkit-border-radius: 10px;    -moz-border-radius: 10px;    text-align: center;    font-size: 16px;margin:0px 0 0px 13%; padding:60px 0; list-style:none; -webkit-border-radius:0; border-width:0; background-color:transparent;}
+.WPapplicationsItem{    position: relative;    -webkit-border-radius: 0;    -moz-border-radius: 0;    text-align: right;margin:0; padding:0; border-width:0; }
+.WPapplicationsTitle{text-align:left; padding:3px 0 3px 10px; display:block; text-decoration:none; overflow:hidden; text-overflow:ellipsis;font-weight:bold !important; font-size:17px;color:#FFFFFF !important;margin:0;font-family:'SegoeUI',Arial,Helvetica,sans-serif;}
+.WPapplicationsImage{vertical-align:middle;margin-right:6px;max-height:38px;max-width:38px;background-color: #0050ef;}
+/*samplemenucssaddition*/.detailspanel{    -webkit-border-top-right-radius: 10px;    -webkit-border-top-left-radius: 10px;    -webkit-border-bottom-right-radius: 10px;    -webkit-border-bottom-left-radius: 10px;    border: solid 1px #aaa;    padding: 20px;    background-color: #ffffff;}
+li > a[selected],li > a:active{    background-color: blue !important;    background-repeat: no-repeat !important;    background-position: right center !important;    color: #FFFFFF !important;    background-image: url(listArrowSel.png) !important;}
+li > a[selected="progress"]{    background-repeat: no-repeat !important;    background-position: right center !important;    background-image: url(loading.gif) !important;}
+body > .SampleMenuPanel{    box-sizing: border-box;    -webkit-box-sizing: border-box;    -moz-box-sizing: border-box;    -webkit-touch-callout: none;    -webkit-user-select: none;    -khtml-user-select: none;    -moz-user-select: none;    -ms-user-select: none;    user-select: none;}
+.samplemenutoolbar{    text-align: center;}
+.samplemenutoolbar h1{    text-align: center;    color: #a8a6a6;    font-size: 22px;    font-family: "Myriad Pro", Helvetica;}
+.SampleMenuList{    position: relative;    margin: 0 0 20px 0;    padding: 0;    background: #FFFFFF;    -webkit-border-radius: 10px;    -moz-border-radius: 10px;    text-align: center;    font-size: 16px;    margin: 5px 9px 15px;    padding: 0;    list-style: none;    -webkit-border-radius: 0;    border-width: 0;    background-color: transparent;}
+.SampleMenuItem{    position: relative;    min-height: 42px;    -webkit-border-radius: 0;    -moz-border-radius: 0;    text-align: right;    margin: 0;    padding: 0;    border-width: 0;}
+.SampleMenuPanel > ul li:last-child{    border-bottom: none !important;}
+.SampleMenuTitle{    text-align: left;    padding: 12px 0 11px 10px;    display: block;    text-decoration: none;    overflow: hidden;    text-overflow: ellipsis;    color: #413F3F;    font-size: 16px;    font-family: arial, Helvetica, sans-serif;    border-bottom: solid 1px #A09D9D;    margin: 0;    margin-top: -1px;}
+.SampleMenuPanel > ul > li:last-child a{    border-bottom-width: 1px !important;}
+.SampleMenuImage{    vertical-align: middle;    margin-left: -4px;    margin-right: 4px;    width: 20px;    margin-bottom: 2px;}
+.SampleMenuTitle ul li:last-child{    border-bottom: none !important;}
+/*contactbuttonmenucssaddition2*/.contactbuttonmenuheader{padding: 3%;width: 40%;}
+body > .squaremenupanel{box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;padding:0px;width: 100%;margin: 0 auto;-webkit-tap-highlight-color:rgba(0,0,0,0.1);}
+.contactbuttonmenucontainer{     text-align: center;    list-style: none;padding-top: 40vh;margin:auto;    margin-left: 2%;    padding-left: 5%;    padding-right: 5%;}
+.contactbuttonmenuitem{        background: darkgray;    box-sizing: border-box;    margin: 3px 3px 3px 3px;    width: 47%;    line-height: 200%;    float: left;}
+.contactbuttonmenuitemlink{text-decoration: none;}
+.contactbuttonmenuimgcontainer{}
+.contactbuttonmenuitemimage{max-width: 40%;min-height: 16vw;max-height: 16vw;    padding-top: 15%;margin: auto;}
+.contactbuttonmenutitle{    color: #0C5BA4;    font-family: sans-serif;    font-weight: 400;    overflow: hidden;    display: -webkit-box;    -webkit-line-clamp: 2;    -webkit-box-orient: vertical;    word-wrap: break-word;    max-width: 15em;    max-height: 1.5em;    margin: auto;    padding-top: 15px;    padding-bottom: 30px;    padding-left: 5px;    padding-right: 5px;}
+/*sidebarmenucssaddition*/.detailspanel{-webkit-border-top-right-radius:10px;-webkit-border-top-left-radius:10px;-webkit-border-bottom-right-radius:10px;-webkit-border-bottom-left-radius:10px;border:solid 1px #aaa;padding:20px;background-color:#ffffff;}
+li > a[selected], li > a:active{background-color: blue !important;    background-repeat: no-repeat !important;    background-position: right center !important;    color: #FFFFFF !important;    background-image: url(listArrowSel.png) !important;}
+li > a[selected="progress"]{background-repeat: no-repeat !important;    background-position: right center !important;background-image: url(loading.gif) !important;}
+body > .SideBarPanel{box-sizing: border-box;    -webkit-box-sizing: border-box;    -moz-box-sizing: border-box;  -webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;  }
+.SideBarList{    position: relative;    margin: 0 0 20px 0;    padding: 0;   background: #FFFFFF;    -webkit-border-radius: 10px;    -moz-border-radius: 10px;    text-align: center;    font-size: 16px;margin:5px 0 15px 0; padding:0; list-style:none; -webkit-border-radius:0; border-width:0; background-color:transparent;}
+.SideBarItem{    position: relative;    min-height: 42px;    border-bottom: 1px solid #999999;   -webkit-border-radius: 0;    -moz-border-radius: 0;    text-align: right;font-family: arial, Helvetica,sans-serif; margin:0; padding:0; border-width:0; background: -moz-linear-gradient(top,  #717984 0%, #505962 100%);background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#717984), color-stop(100%,#505962));background: -webkit-linear-gradient(top,  #717984 0%,#505962 100%);background: -o-linear-gradient(top,  #717984 0%,#505962 100%);background: linear-gradient(to bottom,  #717984 0%,#505962 100%);}
+.SideBarTitle{text-align:left; padding:19px 0 15px 15px; background:url(listArrow.png) center right no-repeat; display:block; text-decoration:none; overflow:hidden; text-overflow:ellipsis;font-weight:bold; font-size:17px;color:White;margin:0;border:1px solid #313842;margin-top:-1px; }
+.SideBarImage{ vertical-align:middle; margin-left:-4px; margin-right:4px; height:24px;}
+/*largebuttonmenucssaddition*/span[data-layout="menuitem"]{    display: block}
+.largeButtonMenuImgContaineriPad{    min-width: 225px;    width: 30%;    min-height: 136px;    height: 28%;    background-repeat: no-repeat;    border-radius: 10px;    background-position: center 0;    background: #ffffff;    margin-bottom: 6px;    -webkit-touch-callout: none;    -webkit-user-select: none;    -khtml-user-select: none;    -moz-user-select: none;    -ms-user-select: none;    user-select: none;}
+.largeButtonMenuImageiPad{    padding: 0px;    min-width: 225px;    width: 30%;}
+.largeButtonMenuItemBgiPad{    min-width: 225px;    width: 30%;    text-align: center;    font-size: 18px;    font-family: STHeitiTC-Light, Tahoma;    font-weight: 100;}
+img.largebuttonmenucenteriPad{    margin-left: auto;    margin-right: auto;    margin-top: 15px;}
+.largeButtonMenuImgContainer{    min-width: 146px;    width: 95%;    min-height: 120px;    height: 28%;    border-radius: 5px;    background: #ffffff;    background-repeat: no-repeat;    margin-bottom: 6px;    -webkit-touch-callout: none;    -webkit-user-select: none;    -khtml-user-select: none;    -moz-user-select: none;    -ms-user-select: none;    user-select: none;}
+.largeButtonMenuImage{    min-width: 150px;    width: 30%;    padding: 0px;}
+.largeButtonMenuItemBg{    min-width: 150px;    width: 30%;    text-align: center;    color: #000000;    font-size: 18px;    font-family: STHeitiTC-Light, Tahoma;    font-weight: 100;    padding-top: 5px}
+img.largebuttonmenucenter{    margin-left: auto;    margin-right: auto;    margin-top: 15px;    max-width: 64px;}
+
+/*slideshowmenuitemscssaddition*/
+
+body > .WebKitPanel
+{
+	box-sizing: border-box;    
+	-webkit-box-sizing: border-box;    
+	-moz-box-sizing: border-box;    
+	padding: 10px; 
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+body > .toolbar
+{
+	text-align:center;
+}
+
+.WebKitPanel.slider-submenu .WebKitList
+{    
+	position: relative;    
+	margin: 0 0 20px 0;    
+	padding: 0;   
+	background: #FFFFFF;    
+	-webkit-border-radius: 10px;    
+	-moz-border-radius: 10px;    
+	text-align: left;    
+	font-size: 16px;
+	margin: 0; 
+	padding:0; 
+	list-style:none; 
+	-webkit-border-radius:0; 
+	border-width:0;
+}
+.WebKitPanel.slider-submenu .WebKitItem
+{    
+	position: relative;    
+	min-height: 42px;  
+	-webkit-border-radius: 0;    
+	-moz-border-radius: 0;    
+	text-align: left;
+	margin:0; 
+	padding:0; 
+	border-width:0; 
+}
+.WebKitPanel > ul li:last-child
+{    
+	border-bottom: none !important;
+}
+.WebKitPanel.slider-submenu{padding: 0}
+.WebKitPanel.slider-submenu *{font-family:sans-serif,Arial, Helvetica;font-weight:400}
+.WebKitPanel.slider-submenu .WebKitTitle{border-bottom: 1px solid #ccc;padding:16px 0 16px 10px; background:url(listArrow.png) center right no-repeat; display:block; text-decoration:none; overflow:hidden; text-overflow:ellipsis; color:#333; font-weight:bold; font-size:16px; margin:0;border-top: none}
+.WebKitPanel.slider-submenu > ul > li:first-child a,
+.WebKitPanel.slider-submenu > ul > li:last-child a{-webkit-border-radius: 0;-moz-border-radius: 0;border-radius: 0}
+.WebKitPanel.slider-submenu .WebKitImage {vertical-align:middle; border:0; margin:-5px 6px -4px 0; height:24px;}

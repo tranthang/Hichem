@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="HICHEM.Views.ApointmentPage">
+    <ContentPage.Content>
+        <ScrollView BackgroundColor="#303030">
+            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Image x:Name="imageApoiment" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand" />
+                <Label HorizontalOptions="FillAndExpand" Text="Thông tin liên hệ:" TextColor="White" />
+                <Entry x:Name="information" HorizontalOptions="FillAndExpand" />
+                <Label HorizontalOptions="FillAndExpand" Text="Location:" TextColor="White" />
+                <StackLayout Orientation="Horizontal">
+                    <Entry x:Name="location" HorizontalOptions="FillAndExpand" HeightRequest="45" />
+                    <Button x:Name="btnLocation" HorizontalOptions="End" TextColor="White" HeightRequest="45" WidthRequest="75" Image="pick.png" />
+                </StackLayout>
+                <Label HorizontalOptions="FillAndExpand" TextColor="White" Text="Date:" />
+                <DatePicker x:Name="date" HorizontalOptions="FillAndExpand" Date="{Binding Item.DateProperty}" />
+                <Label HorizontalOptions="FillAndExpand" Text="Time:" TextColor="White" />
+                <TimePicker x:Name="time" HorizontalOptions="FillAndExpand" Time="{Binding Item.TimeProperty}" />
+                <Label HorizontalOptions="FillAndExpand" Text="Tel:" TextColor="White" />
+                <Entry x:Name="tel" HorizontalOptions="FillAndExpand" />
+                <Label HorizontalOptions="FillAndExpand" Text="Email:" TextColor="White" />
+                <Entry x:Name="email" HorizontalOptions="FillAndExpand" />
+                <Label HorizontalOptions="FillAndExpand" Text="Về việc:" TextColor="White" />
+                <Entry x:Name="description" HorizontalOptions="FillAndExpand" HeightRequest="100" />
+                <Button x:Name="submit" Text="GỬI THÔNG TIN" HorizontalOptions="FillAndExpand" BackgroundColor="Red" TextColor="White" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

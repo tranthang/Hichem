@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<locations>
+  <location>
+    <id>wOrwPmQoKLwh</id>
+    <name>Số 10 Tân Trào</name>
+    <latitude>10.729375</latitude>
+    <longitude>106.724058</longitude>
+    <target>
+    </target>
+    <type>Sưa chua, Sữa đặc, Sữa tươi, Kem, Nước giải khát, Bột dinh dưỡng, Bột ăn dặm, Dinh dưỡng, Pho mai, Kem</type>
+    <imageurl>
+    </imageurl>
+    <description>Trụ sở chính của Công ty</description>
+  </location>
+  <location>
+    <id>qCDlMDLUGlaX</id>
+    <name>Centre</name>
+    <latitude>10.794353</latitude>
+    <longitude>106.674280</longitude>
+    <target>
+    </target>
+    <type>Shop,Karaoke,Restaurant, Sữa, Bột, Kem, Pho mai, Trái cây, Bột</type>
+    <imageurl>
+    </imageurl>
+    <description>About this location</description>
+  </location>
+</locations>

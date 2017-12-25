@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <directory>
+    <person id="a9992c86-15e0-47fa-b1c0-565e3244401e">
+      <info name="Phòng " secondName="kinh doanh" title="Owner" email="tungvietcommunication@gmail.com" phone="0903852645" photoSrc="" tags="" />
+      <description>
+      </description>
+    </person>
+    <person id="7a49295e-83f4-41ab-91c0-f145c14fc0c6">
+      <info name="Phòng" secondName="Kế Toán" title="" email="ketoanhichem@gmail.com" phone="+84-24-37 633 452" photoSrc="" tags="" />
+      <description>Liên hệ Kế toán, thanh toán, tài chính</description>
+    </person>
+    <person id="0dabb9fa-1018-4279-8dec-b96595b7103d">
+      <info name="Phòng " secondName="Kỹ thuật" title="" email="kythuathichem@gmail.com" phone="+84-24-37 633 452" photoSrc="" tags="" />
+      <description>
+      </description>
+    </person>
+    <person id="c7fcc9a5-f07f-45f9-b833-cc43afb7ccb7">
+      <info name="Phòng " secondName="Hành Chính" title="" email="hanhchinhhichem@gmail.com" phone="" photoSrc="" tags="" />
+      <description>
+      </description>
+    </person>
+    <person id="83e0829f-7f42-4c6c-8596-7a7414c8f273">
+      <info name="CN" secondName="HCM" title="" email="hcmhichem@gmail.com" phone="+84-28-3815 0836" photoSrc="" tags="" />
+      <description>
+      </description>
+    </person>
+    <person id="5e648e67-86a3-4d8d-92c4-03900106741a">
+      <info name="CN" secondName="Miền Trung" title="" email="mientrunghichem@gmail.com" phone="0904 884 257" photoSrc="" tags="" />
+      <description>
+      </description>
+    </person>
+  </directory>
+</root>

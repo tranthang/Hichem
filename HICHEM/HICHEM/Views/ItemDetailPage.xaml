@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="HICHEM.ItemDetailPage" Title="{Binding Title}">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <ProgressBar Progress="0.2" IsVisible="false" HorizontalOptions="FillAndExpand" x:Name="activity_indicator" />
+            <WebView x:Name="ItemDetail" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Navigating="OnNavigating" Navigated="OnNavigated" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

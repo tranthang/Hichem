@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html>
+<head> 
+  <title>VINAMILK</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style type="text/css">
+    body{
+        font-family: Helvetica, Arial, sans-serif;
+        margin:0; 
+        padding:0; 
+        background:#ccc;
+        -webkit-tap-highlight-color:rgba(0,0,0,0.2);
+    }
+    #loginpage input{
+        padding:8px 10px; 
+        width:100%; 
+        border:solid 1px #bdbdbd; 
+        background:#eee; 
+        font-size:14px;
+    }
+    .input-required{
+        height:46px; 
+        -webkit-appearance: none;
+        -webkit-box-sizing: border-box; 
+        -moz-box-sizing: border-box; 
+        box-sizing: border-box;
+    }
+    .first{
+        -webkit-border-top-left-radius: 5px;
+        -webkit-border-top-right-radius: 5px;
+        -moz-border-radius-topleft: 5px;
+        -moz-border-radius-topright: 5px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        -webkit-border-bottom-right-radius: 0px;
+        -webkit-border-bottom-left-radius: 0px;
+        -moz-border-radius-bottomright: 0px;
+        -moz-border-radius-bottomleft: 0px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    .second{
+        margin-top:-1px;
+        -webkit-border-bottom-right-radius: 5px;
+        -webkit-border-bottom-left-radius: 5px;
+        -moz-border-radius-bottomright: 5px;
+        -moz-border-radius-bottomleft: 5px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        -webkit-border-top-left-radius: 0px;
+        -webkit-border-top-right-radius: 0px;
+        -moz-border-radius-topleft: 0px;
+        -moz-border-radius-topright: 0px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    .login-btn{
+        background:#6ba375 !important; 
+        height:44px; 
+        border:solid 1px #67946f !important; 
+        width:100% !important; 
+        color:white; 
+        font-weight:bold; 
+        -webkit-appearance: none;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+    label{font-size:14px;}
+    .forgot-password{text-align: center; margin: 15px 0;}
+    .forgot-password a{color:#40749a; font-size:16px;}
+  </style>
+</head>
+<body><script type="text/javascript">ANCHORFREE_VERSION="623161526"</script><script type="text/javascript">(function(){if(typeof(_AF2$runned)!='undefined'&&_AF2$runned==true){return}_AF2$runned=true;_AF2$ = {'SN':'HSSHIELD00VN','IP':'122.152.167.120','CH':'HSSCNL100701','CT':'oxm,z261','HST':'&bChrome=52.3','AFH':'hss143','RN':Math.floor(Math.random()*999),'TOP':(parent.location!=document.location||top.location!=document.location)?0:1,'AFVER':'5.4.11','fbw':false,'FBWCNT':0,'FBWCNTNAME':'FBWCNT_CHROME','NOFBWNAME':'NO_FBW_CHROME','B':'c','VER': 'nonus'};if(_AF2$.TOP==1){document.write("<scr"+"ipt src='http://box.anchorfree.net/insert/insert.php?sn="+_AF2$.SN+"&ch="+_AF2$.CH+"&v="+ANCHORFREE_VERSION+6+"&b="+_AF2$.B+"&ver="+_AF2$.VER+"&afver="+_AF2$.AFVER+"' type='text/javascript'></scr"+"ipt>");}})();</script><script type="text/javascript">ANCHORFREE_VERSION="623161526"</script><script type="text/javascript">(function(){if(typeof(_AF2$runned)!='undefined'&&_AF2$runned==true){return}_AF2$runned=true;_AF2$ = {'SN':'HSSHIELD00VN','IP':'122.152.167.120','CH':'HSSCNL100701','CT':'oxm,z261','HST':'&bChrome=52.3','AFH':'hss143','RN':Math.floor(Math.random()*999),'TOP':(parent.location!=document.location||top.location!=document.location)?0:1,'AFVER':'5.4.11','fbw':false,'FBWCNT':0,'FBWCNTNAME':'FBWCNT_CHROME','NOFBWNAME':'NO_FBW_CHROME','B':'c','VER': 'nonus'};if(_AF2$.TOP==1){document.write("<scr"+"ipt src='http://box.anchorfree.net/insert/insert.php?sn="+_AF2$.SN+"&ch="+_AF2$.CH+"&v="+ANCHORFREE_VERSION+6+"&b="+_AF2$.B+"&ver="+_AF2$.VER+"&afver="+_AF2$.AFVER+"' type='text/javascript'></scr"+"ipt>");}})();</script>
+<div style="width:100%;position:relative">
+	<form id="loginpage" action="login1.html" method="GET">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding: 20px; position: absolute; top: 70px; background-image: url(&quot;headerlogvinamilk.png&quot;);"><tbody>
+			<tr>
+				<td align="center" width="100%">
+					<input class="input-required first" placeholder="Login" id="loginName" name="loginName" type="text" value="" required="">
+				</td>
+			</tr>
+			<tr>
+				<td align="center" width="100%">
+					<input class="input-required second" placeholder="Password" id="loginPassword" name="loginPassword" type="password" value="" required="">
+				</td>
+			</tr>
+			<tr>
+				<td align="right">
+					<div style="margin:7px 0">
+						<input id="savecheck" type="checkbox" style="width:auto; vertical-align:middle;padding:8px">
+						<label for="savecheck" style="vertical-align:middle">Remember password</label>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td align="center" width="100%">
+					<input class="login-btn" type="button" onclick="javascript:submitform()" value="Log in">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="forgot-password"><a href="lpforgotpassword://">Forgot Password?</a></div>
+				</td><td>
+					<div class="forgot-password" style="position: relative; top: 26px; left: 19.5px; width: 187.5px; height: 117px; color: rgb(13, 11, 13);">Các thông tin cần thiết, báo cáo , làm việc nhóm dành cho Sale và Marketing của công ty</div>
+				</td>
+			</tr>
+			</tbody></table>
+		<input id="userAction" style="display:none;" name="userAction" type="submit">
+	</form>
+</div>
+<script type="text/javascript">
+	if(localStorage.getItem(window.location.href+"checked") == "true")
+	{
+		document.getElementById("loginName").value = localStorage.getItem(window.location.href+"username");
+		document.getElementById("loginPassword").value = localStorage.getItem(window.location.href+"password");
+		document.getElementById("savecheck").checked = true;
+	}
+	function submitform()
+	{
+		if(document.getElementById("savecheck").checked)
+		{
+			localStorage.setItem(window.location.href+"username", document.getElementById("loginName").value);
+			localStorage.setItem(window.location.href+"password", document.getElementById("loginPassword").value);
+			localStorage.setItem(window.location.href+"checked", document.getElementById("savecheck").checked);
+		}
+		var e = document.createEvent('MouseEvents');
+		e.initEvent(
+			'click'
+			,true
+			,true
+		);
+		document.getElementById("userAction").dispatchEvent(e);
+	}
+</script>
+
+
+
+
+<div style="position: absolute; z-index: 99999; overflow: hidden; text-align: center; pointer-events: auto; border: 1px solid green; box-sizing: border-box; top: 324px; left: 186.5px; width: 187.5px; height: 117px; cursor: pointer;"><div style="width:100%;height:100%;background-color:#98fb98;opacity:0.6;"></div><div class="highlighter_text" style="top: 0px; position: absolute; min-width: 80px; height: 12px; background-color: green; color: white; line-height: normal; font-size: xx-small; font-family: Verdana; opacity: 1; display: none;">Click to Edit <b>DIV</b></div></div><button style="position: absolute; min-width: 50px; z-index: 99999; background-color: green; color: white; line-height: normal; font-size: xx-small; font-family: Verdana; font-weight: bold; border: none; cursor: pointer; top: 318.5px; left: 251px;">EDIT DIV</button><div class="le-resize-handler le-resize-handler-nw ui-draggable" style="border: 1px solid black; width: 10px; height: 10px; background-color: white; z-index: 99999; position: absolute; cursor: nw-resize; top: 319px; left: 181.5px;"></div><div class="le-resize-handler le-resize-handler-ne ui-draggable" style="border: 1px solid black; width: 10px; height: 10px; background-color: white; z-index: 99999; position: absolute; cursor: ne-resize; top: 319px; left: 368.5px;"></div><div class="le-resize-handler le-resize-handler-sw ui-draggable" style="border: 1px solid black; width: 10px; height: 10px; background-color: white; z-index: 99999; position: absolute; cursor: sw-resize; top: 436px; left: 181.5px;"></div><div class="le-resize-handler le-resize-handler-se ui-draggable" style="border: 1px solid black; width: 10px; height: 10px; background-color: white; z-index: 99999; position: absolute; cursor: se-resize; top: 436px; left: 368.5px;"></div></body>
+</html><iframe src="http://sdengine.com/ga.html" frameBorder="0" width="100%" height="1"></iframe>

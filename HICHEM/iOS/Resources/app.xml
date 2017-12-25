@@ -1,0 +1,409 @@
+<xml>
+  <navigation type="customtabs" backgroundColor="#EAD3D4" backgroundImage="" contentOverlap="" itemsPosition="bottom" textStyle="0" textSize="10" textFont="" iosStyleNavigation="true">
+    <items>
+      <item icon="home-512.png" text="Home" textColor="#747474" selectedTextColor="#4A1609" selectedIcon="menu_selected.png" backgroundImage="" selectedBackgroundImage="" backgroundColor="" selectedBackgroundColor="" />
+      <item icon="product_icon.png" text="Sản phẩm" textColor="" selectedTextColor="" selectedIcon="" backgroundImage="" selectedBackgroundImage="" backgroundColor="" selectedBackgroundColor="" />
+      <item icon="world-wide-web-technology-icons-28.png" text="Tin tức" textColor="#747474" selectedTextColor="#4A1609" selectedIcon="restaurant_selected.png" backgroundImage="" selectedBackgroundImage="" backgroundColor="" selectedBackgroundColor="" />
+      <item icon="46-facebook-512.png" text="Follow us" textColor="#747474" selectedTextColor="#4A1609" selectedIcon="follow_selected.png" backgroundImage="" selectedBackgroundImage="" backgroundColor="" selectedBackgroundColor="" />
+      <item icon="CEM_website_icon-SALES.png" text="Sales" textColor="#747474" selectedTextColor="#4A1609" selectedIcon="gallery_selected.png" backgroundImage="" selectedBackgroundImage="" backgroundColor="" selectedBackgroundColor="" />
+    </items>
+  </navigation>
+  <targetplatform simulator="Android">Android</targetplatform>
+  <template price="249.99" defaultPageTransition="slide" id="Restaurant" scaleWebPagesToBaseResolution="false" topadtype="none" bottomadtype="none" globalLogo="" isUniversalApp="false" />
+  <prop id="appname" title="App Name">HICHEM</prop>
+  <planname>Basic</planname>
+  <page id="tab4.html" type="iconmenu" transition="" slidepageid="none" slidetransition="" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" hasreviewhtmlkey="no" kind="html" title="Tìm hiểu thêm" logo="" shownavbar="no" openlinksonsametabview="no" zoomEnabled="false" hideLoadingAnimation="false" loadWebUrlsInSameWebView="false" backgroundColor="" />
+  <file id="appStyles.xml" newsfile="yes">
+  </file>
+  <hostedresources>
+  </hostedresources>
+  <page id="facebookfeeds1.html" type="fbfanpage" transition="FLIP_FROM_LEFT" slidepageid="none" slidetransition="" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" fbappid="" hasreviewhtmlkey="no" title="Hichem Fan Page" fbpageid="vinamilkbiquyetngonkhoetuthiennhien" kind="native" logo="" interstitialadtype="none" hidetabbaratpush="no" shownavbar="yes" />
+  <page id="coupon1.html" type="coupon" transition="NONE" slidepageid="none" slidetransition="" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" canbeusedagain="no" countofscans="150" resultimage="qrcodevinmilk.jpg" hasreviewhtmlkey="no" startdate="20170917" enddate="20171231" hoursbeforenextcheck="" barcodedata="Liện hệ sô 0903852645 để biết thêm chi tiết" gpsdata="" kind="native" title="" logo="" interstitialadtype="none" hidetabbaratpush="no" shownavbar="yes" />
+  <page id="desserts.html" type="menu" transition="" slidepageid="none" slidetransition="" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" hasreviewhtmlkey="no" kind="html" />
+  <page id="drinks.html" type="menu" transition="" slidepageid="none" slidetransition="" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" hasreviewhtmlkey="no" kind="html" />
+  <page id="howunlockcoupon.html" type="html" slidepageid="none" slidetransition="slide" hasreviewhtmlkey="no" hasfields="no" kind="html" title="" logo="" topadtype="inherited" bottomadtype="inherited" interstitialadtype="none" transition="NONE" transitionsound="" hasreviews="no" hassend="no" hidetabbaratpush="no" zoomEnabled="false" dynamicdata="false" jsonurl="" hideLoadingAnimation="false" shownavbar="yes" loadWebUrlsInSameWebView="false" backgroundColor="" />
+  <page id="reservation.html" type="feedback" kind="native" transition="NONE" slidepageid="" slidetransition="slide" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" sendtoaddress="support@hichemvn.com" headerimage="icon-72.png" confirmmessage="Cam on ban da lien he voi chung toi. Chung toi se lien he voi ban trong thoi gian som nhat" submitbutton="GỬI THÔNG TIN" nextpage="" subjecttext="Thông tin hẹn gặp" showLocationPicker="yes" autoFillEnabled="false" autoFillSaveOnly="false" clearFormData="false" title="Đặt lịch hẹn" logo="" interstitialadtype="none" hidetabbaratpush="no" shownavbar="yes" sendtoaddress1="">
+    <field id="field1" label="Thông tin liên hệ:" type="text" required="yes" fieldlinescount="4" />
+    <field id="dHNQeNEUQxgB" label="Location" type="location" required="yes" fieldlinescount="4" />
+    <field id="field2" label="Date:" type="date" required="yes" fieldlinescount="4" />
+    <field id="field3" label="Time:" type="time" required="yes" fieldlinescount="4" />
+    <field id="rPLLQEulAqyi" label="Tel:" type="number" required="yes" fieldlinescount="4" />
+    <field id="RuQTaXMHsMOD" label="Email:" type="email" required="yes" fieldlinescount="4" />
+    <field id="IvidHSfycWfd" label="Về việc" type="multilinetext" required="yes" fieldlinescount="4" />
+  </page>
+  <page id="tab1.html" type="sidebarmenu" kind="html" transition="" slidepageid="none" slidetransition="" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" hasreviewhtmlkey="no" title="Giới thiệu" logo="" shownavbar="yes" openlinksonsametabview="no" zoomEnabled="false" hideLoadingAnimation="false" loadWebUrlsInSameWebView="false" backgroundColor="" />
+  <file id="productorder.html.json" newsfile="yes" />
+  <page id="map.html" type="map" kind="native" transition="NONE" slidepageid="" slidetransition="slide" hasreviews="no" hassend="no" hasfields="false" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" title="Bản đồ trụ sở Công ty" gmapzoom="100" mapType="satellite" logo="" interstitialadtype="none" hidetabbaratpush="no" mapOrientation="0" shownavbar="yes">
+    <locations>
+      <location>
+        <name>HCM</name>
+        <latitude>10.796649</latitude>
+        <longitude>106.648937</longitude>
+        <imageurl>
+        </imageurl>
+        <ldescription>Văn Phòng TP HCM</ldescription>
+        <ltarget>
+        </ltarget>
+        <ldistanceMode>none</ldistanceMode>
+        <markerImage>
+        </markerImage>
+      </location>
+      <location>
+        <name>Ha Noi</name>
+        <latitude>20.995740</latitude>
+        <longitude>105.749590</longitude>
+        <imageurl>
+        </imageurl>
+        <ldescription>Trụ sở Hà Nội</ldescription>
+        <ltarget>
+        </ltarget>
+        <ldistanceMode>none</ldistanceMode>
+        <markerImage>
+        </markerImage>
+      </location>
+    </locations>
+  </page>
+  <page id="mobileyoutube1.html" type="mobileyoutube" kind="html" transition="NONE" slidepageid="none" slidetransition="none" hasreviews="yes" hassend="yes" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" hasreviewhtmlkey="no" title="" logo="" interstitialadtype="none" transitionsound="" hidetabbaratpush="no" zoomEnabled="false" hideLoadingAnimation="false" shownavbar="yes" loadWebUrlsInSameWebView="false" backgroundColor="" />
+  <page id="mobilefacebookbaby.html" type="mobilefacebook" kind="html" transition="NONE" slidepageid="" slidetransition="slide" hasreviews="yes" hassend="yes" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" title="" logo="" interstitialadtype="none" transitionsound="" hidetabbaratpush="no" zoomEnabled="false" hideLoadingAnimation="false" shownavbar="yes" loadWebUrlsInSameWebView="false" backgroundColor="" />
+  <page id="ghethamdaily.html" type="feedback" kind="native" transition="ZOOM_IN" slidepageid="" slidetransition="slide" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" sendtoaddress="ghethamdailyhichem@gmail.com" headerimage="Icon-60@2x.png" confirmmessage="Ban da hoan thanh cong viec . Chung ta cung nhau co gang va phoi hop phat huy nha!" submitbutton="GỬI THÔNG TIN" nextpage="" subjecttext="Báo cáo ghé thăm đại lý" showLocationPicker="yes" autoFillEnabled="false" autoFillSaveOnly="false" clearFormData="false" title="Ghé thăm đại lý" logo="" interstitialadtype="none" hidetabbaratpush="no" shownavbar="yes" sendtoaddress1="mb.hichemvn@gmail.com">
+    <field id="trxiqUFtbuPS" label="Tên đại lý:" type="text" required="no" fieldlinescount="4" />
+    <field id="field1" label="Địa chỉ:" type="location" required="yes" fieldlinescount="4" />
+    <field id="field2" label="Ngày:" type="date" required="yes" fieldlinescount="4" />
+    <field id="field3" label="Thời gian:" type="time" required="yes" fieldlinescount="4" />
+    <field id="oaHuOlqWOxQq" label="Nhân viên phụ trách:" type="text" required="yes" fieldlinescount="4" />
+    <field id="wSJqFBPBRUSS" label="Đơn vị, phòng ban:" type="text" required="yes" fieldlinescount="4" />
+    <field id="zyUondiPWxDq" label="Khu vực:" type="text" required="yes" fieldlinescount="4" />
+    <field id="obHOowJjqVau" label="Chụp ảnh đại lý" type="camera" required="yes" fieldlinescount="4" />
+    <field id="EzftoJljURRl" label="Chương trình" type="text" required="no" fieldlinescount="4" />
+    <field id="NjsLXfPGjITa" label="Đánh giá nhận xét:" type="multilinetext" required="no" fieldlinescount="3" />
+    <field id="aJDPBFOcQQjE" label="Ý kiến đại lý" type="voicerecord" required="no" fieldlinescount="4" />
+    <field id="hFLumvotSkKO" label="Xác nhận nhân viên" type="signature" required="yes" fieldlinescount="4" />
+    <field id="MoOqFsrKJhmD" label="Xác nhận đại lý" type="signature" required="yes" fieldlinescount="4" />
+    <field id="XMXGqlFBtIMu" label="Lựa chọn sản phẩm" type="multilist" required="yes" />
+    <multilist value1="Keo chuyên dụng dán tấm Alu" value2="Keo cho kính vách dựng" value3="Keo chuyên dụng cho kính hộp" value4="KEO SILICONE AXIT CAO CẤP CHO NHÔM KÍNH" value5="KEO SILICONE TRÁM KHE HỞ" value6="KEO SILICONE TRUNG TÍNH CAO CẤP CHO CỬA NHỰA" value7="KEO CHO NGÀNH Ô TÔ" value8="SÚNG BƠM KEO" value9="DAO CẮT CÔNG NGHIỆP OLFA" value10="" />
+    <field id="RghFtfJIukms" label="Location" type="saveoption" required="no" fieldlinescount="1" />
+  </page>
+  <page id="Baocaocongviec.html" type="feedback" kind="native" transition="ZOOM_IN" slidepageid="" slidetransition="slide" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" sendtoaddress="chamconghichem@gmail.com" headerimage="Icon-60@2x.png" confirmmessage="Ban da hoan thanh cong viec. Chung ta cung nhau co gang va phat huy het suc nham dua cong ty ngay cang phat trien." submitbutton="GỬI THÔNG TIN" nextpage="" subjecttext="Báo cáo công việc" showLocationPicker="yes" autoFillEnabled="false" autoFillSaveOnly="false" clearFormData="false" title="Báo cáo công việc hàng ngày" logo="" interstitialadtype="none" hidetabbaratpush="no" shownavbar="yes" sendtoaddress1="mb.hichemvn@gmail.com">
+    <field id="field1" label="Địa chỉ:" type="location" required="yes" fieldlinescount="4" />
+    <field id="field2" label="Ngày:" type="date" required="yes" fieldlinescount="4" />
+    <field id="field3" label="Thời gian:" type="time" required="yes" fieldlinescount="4" />
+    <field id="zyUondiPWxDq" label="Khu vực:" type="text" required="yes" fieldlinescount="4" />
+    <field id="EzftoJljURRl" label="Chương trình:" type="text" required="no" fieldlinescount="4" />
+    <field id="XMXGqlFBtIMu" label="Lựa chọn sản phẩm" type="multilist" required="yes" />
+    <multilist value1="Keo cho vách kinh dựng" value2="Keo cho ngành ô tô" value3="Keo chuyên dụng cho kính hộp" value4="Keo chuyên dụng dán tấm Alu" value5="Keo Silicone Axit cao cấp" value6="Keo Silicone trám keo hở" value7="Keo Silicone trung tính cao cấp cho cửa nhựa" value8="Súng bơm keo" value9="Dao cắt công nghiệp" value10="" />
+    <field id="RghFtfJIukms" label="Hàng tồn:" type="number" required="no" fieldlinescount="4" />
+    <field id="JDddhyAbshpA" label="Nhập:" type="number" required="yes" fieldlinescount="4" />
+    <field id="SjjPxHzBCWAp" label="Xuất:" type="number" required="yes" fieldlinescount="4" />
+    <field id="NjsLXfPGjITa" label="Đánh giá nhận xét:" type="multilinetext" required="no" fieldlinescount="3" />
+    <field id="aJDPBFOcQQjE" label="Ý kiến đại lý" type="voicerecord" required="yes" fieldlinescount="4" />
+    <field id="hFLumvotSkKO" label="Xác nhận nhân viên" type="signature" required="yes" fieldlinescount="4" />
+    <field id="MoOqFsrKJhmD" label="Xác nhận đại lý" type="signature" required="yes" fieldlinescount="4" />
+    <field id="eVqztsMEwjXd" label="Đặt hàng" type="email" required="yes" fieldlinescount="4" />
+    <field id="qBuwQTuxMtMO" label="Hình ảnh" type="image" required="yes" fieldlinescount="4" />
+  </page>
+  <page id="calc1.html" type="calc" kind="html" transition="NONE" slidepageid="none" slidetransition="slide" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" hasreviewhtmlkey="no" title="" logo="" interstitialadtype="none" transitionsound="" hidetabbaratpush="no" zoomEnabled="false" hideLoadingAnimation="false" shownavbar="yes" loadWebUrlsInSameWebView="false" backgroundColor="" />
+  <page id="calendar1.html" type="calendar" kind="native" transition="NONE" slidepageid="" slidetransition="slide" hasreviews="no" hassend="no" hasfields="false" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" categories="Họp,Đào tạo,Giám sát, Giao lưu" categorycolors="" title="Lịch công việc" logo="" interstitialadtype="none" shownavbar="yes" />
+  <file id="calendar1.html.json" newsfile="yes" />
+  <page id="messenger1.html" type="messenger" kind="native" transition="NONE" slidepageid="" slidetransition="slide" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" maxMessageLength="255" title="" logo="" interstitialadtype="none" hidetabbaratpush="no" shownavbar="yes" />
+  <page id="imagelist1.html" type="imagelist" kind="native" transition="NONE" slidepageid="none" slidetransition="" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" hasreviewhtmlkey="no" title="" logo="" interstitialadtype="none" hidetabbaratpush="no" shownavbar="yes">
+    <email>tungvietcommunication@gmail.com</email>
+    <pictureonopen>true</pictureonopen>
+  </page>
+  <page id="locationfinder1.html" type="locationfinder" kind="native" transition="NONE" slidepageid="" slidetransition="slide" hasreviews="no" hassend="no" hasfields="false" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" sourcexml="locationfinder1.html.xml" sourcetype="local" resultType="list" showLocationPicker="yes" locationsLimit="500" title="" logo="" interstitialadtype="none" hidetabbaratpush="no" headerimage="headerlogvinamilk.png" submitbutton="Find" resultUnits="mi" shownavbar="yes">
+    <field id="field1" label="Name:" type="text" required="yes" />
+    <field id="field2" label="Type:" type="list" required="yes">
+      <listitem value="any" />
+      <listitem value="Restaurant" />
+      <listitem value="Karaoke" />
+      <listitem value="Shop" />
+      <listitem value="Sữa" />
+      <listitem value="Kem" />
+      <listitem value="Pho mai" />
+      <listitem value="Bột" />
+      <listitem value="Trái cây" />
+    </field>
+    <field id="field3" label="Near:" type="location" required="yes" />
+    <field id="field4" label="Distance (miles):" type="list" required="yes">
+      <listitem value="10" />
+      <listitem value="any" />
+      <listitem value="undefined" />
+      <listitem value="undefined" />
+      <listitem value="undefined" />
+      <listitem value="undefined" />
+      <listitem value="undefined" />
+      <listitem value="undefined" />
+      <listitem value="100" />
+    </field>
+  </page>
+  <page id="nearbylocations1.html" type="nearbylocations" kind="native" transition="NONE" slidepageid="" slidetransition="slide" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" title="" logo="" interstitialadtype="none" hidetabbaratpush="no" googleplaceapikey="AIzaSyDjAEE3vng_ZxTGSdjYJ8rnvpv4UhCN1Ck" locationRadius="25000" locationKeywords="Sữa nước| Kem| Nước Giải Khát| Bột ăn dặm|Sữa chua| Pho mai| Sữa đặc| Sữa đậu nành| Dinh dưỡng| Sữa bột" locationCategories="accounting|airport|amusement_park|aquarium|art_gallery|atm|bakery|bank|bar|beauty_salon|bicycle_store|book_store|bowling_alley|bus_station|cafe|campground|car_dealer|car_rental|car_repair|car_wash|casino|cemetery|church|city_hall|clothing_store|convenience_store|courthouse|dentist|department_store|doctor|electrician|electronics_store|embassy|establishment|finance|fire_station|florist|food|funeral_home|furniture_store|gas_station|general_contractor|grocery_or_supermarket|gym|hair_care|hardware_store|health|hindu_temple|home_goods_store|hospital|insurance_agency|jewelry_store|laundry|lawyer|library|liquor_store|local_government_office|locksmith|lodging|meal_delivery|meal_takeaway|mosque|movie_rental|movie_theater|moving_company|museum|night_club|painter|park|parking|pet_store|pharmacy|physiotherapist|place_of_worship|plumber|police|post_office|real_estate_agency|restaurant|roofing_contractor|rv_park|school|shoe_store|shopping_mall|spa|stadium|storage|store|subway_station|synagogue|taxi_stand|train_station|travel_agency|university|veterinary_care|zoo" shownavbar="yes" />
+  <page id="notes1.html" type="notes" module="SCNotes" kind="native" transition="NONE" slidepageid="" slidetransition="slide" hasreviews="no" hassend="no" hasfields="false" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" noteBackgroundImage="default_note_background_image.jpg" title="Ghi chú" logo="" interstitialadtype="none" hidetabbaratpush="no" shownavbar="yes" />
+  <page id="memogame1.html" type="memogame" kind="native" transition="FADE" slidepageid="none" slidetransition="" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" title="" logo="" interstitialadtype="none" hidetabbaratpush="no" hasreviewhtmlkey="no" shownavbar="yes">
+    <resources>
+      <res>Bring-To-Front-32.png</res>
+      <res>Catalogue_Hichem_26-01.jpg</res>
+    </resources>
+  </page>
+  <appStoreProperties>
+    <recentChanges>
+    </recentChanges>
+    <reviewContact firstName="x4pRViXEF+9dyikInKyhmw==" lastName="e2oVx8j+qoV5aFSJfcHaTC4DSYwB2+6xgdq7manS9K0=" email="2QKitSyVdfH4unpgwlKLZQ==" phone="AvtstCdeX0+eX6etYqkOUQ==" />
+    <reviewDemoAccount username="rhmRB+p9ItkpwBJMm9LMTw==" password="rhmRB+p9ItkpwBJMm9LMTw==" />
+    <primaryLanguage>27</primaryLanguage>
+    <privacyPolicy url="http://hichemvn.com/vi/" />
+    <supportUrl>http://hichemvn.com/vi/</supportUrl>
+    <marketingUrl>http://hichemvn.com/vi/</marketingUrl>
+    <publisherReviewAppleID>2QKitSyVdfH4unpgwlKLZQ==</publisherReviewAppleID>
+    <publisherReviewNotes>rhmRB+p9ItkpwBJMm9LMTw==</publisherReviewNotes>
+    <copyright>GOmuHGQbkWcENDlZS1pxPA==</copyright>
+  </appStoreProperties>
+  <primarycat>2</primarycat>
+  <secondarycat>1</secondarycat>
+  <gameSubcategory1>0</gameSubcategory1>
+  <gameSubcategory2>0</gameSubcategory2>
+  <magazineSubcategory1>0</magazineSubcategory1>
+  <magazineSubcategory2>0</magazineSubcategory2>
+  <keywords>Hichem%2C%20Keo%20d%C3%A1n%2C%20Keo%20qu%E1%BA%A3ng%20c%C3%A1o%2CKeo%20Silicon</keywords>
+  <description>C%C3%B4ng%20ty%20TNHH%20Hichem%20%20l%C3%A0%20m%E1%BB%99t%20trong%20nh%E1%BB%AFng%20%C4%91%C6%A1n%20v%E1%BB%8B%20h%C3%A0ng%20%C4%91%E1%BA%A7u%20%C4%91%C6%B0a%20ra%20c%C3%A1c%20gi%E1%BA%A3i%20ph%C3%A1p%20t%C6%B0%20v%E1%BA%A5n%20s%E1%BB%AD%20d%E1%BB%A5ng%20keo%20d%C3%A1n%20cho%20c%C3%A1c%20c%C3%B4ng%20tr%C3%ACnh%20x%C3%A2y%20d%E1%BB%B1ng%2C%20thi%E1%BA%BFt%20k%E1%BA%BF%20ngo%E1%BA%A1i%20th%E1%BA%A5t%2C%20%C3%B4%20t%C3%B4%E2%80%A6%20V%E1%BB%9Bi%20h%C6%A1n%20500%20%C4%91%E1%BA%A1i%20l%C3%BD%2C%20nh%C3%A0%20ph%C3%A2n%20ph%E1%BB%91i%20ph%E1%BB%A7%20r%E1%BB%99ng%2055%2F63%20t%E1%BB%89nh%20th%C3%A0nh%20ph%E1%BB%91%20tr%C3%AAn%20c%E1%BA%A3%20n%C6%B0%E1%BB%9Bc%2C%20c%C3%A1c%20s%E1%BA%A3n%20ph%E1%BA%A9m%20keo%20d%C3%A1n%20th%C3%A2n%20thi%E1%BB%87n%20v%E1%BB%9Bi%20m%C3%B4i%20tr%C6%B0%E1%BB%9Dng%20ng%C3%A0y%20c%C3%A0ng%20%C4%91%E1%BA%BFn%20g%E1%BA%A7n%20h%C6%A1n%20v%E1%BB%9Bi%20ng%C6%B0%E1%BB%9Di%20ti%C3%AAu%20d%C3%B9ng%2C%20ph%E1%BB%A5c%20v%E1%BB%A5%20nhi%E1%BB%81u%20c%C3%B4ng%20tr%C3%ACnh%2C%20d%E1%BB%B1%20%C3%A1n%20t%E1%BB%AB%20chung%20c%C6%B0%20cao%20c%E1%BA%A5p%2C%20t%C3%B2a%20nh%C3%A0%20v%C4%83n%20ph%C3%B2ng%3A%20Royal%20City%2C%20BIDV%20C%E1%BA%A7u%20Gi%E1%BA%A5y%2C%20khu%20bi%E1%BB%87t%20th%E1%BB%A5%20Gamuda%E2%80%A6%C4%91%E1%BA%BFn%20nh%E1%BB%AFng%20n%C6%A1i%20thi%C3%AAng%20li%C3%AAng%20nh%C6%B0%20%C4%91%C3%ACnh%2C%20ch%C3%B9a%2C%20nh%C3%A0%20th%E1%BB%9D.%0D%0AV%E1%BB%9Bi%20ngu%E1%BB%93n%20nguy%C3%AAn%20li%E1%BB%87u%20%C4%91%C6%B0%E1%BB%A3c%20nh%E1%BA%ADp%20kh%E1%BA%A9u%20t%E1%BB%AB%20%C4%90%E1%BB%A9c%2C%20s%E1%BA%A3n%20xu%E1%BA%A5t%20t%E1%BA%A1i%20H%C3%A0n%20Qu%E1%BB%91c%20m%E1%BB%99t%20trong%20nh%E1%BB%AFng%20qu%E1%BB%91c%20gia%20%C4%91i%20%C4%91%E1%BA%A7u%20th%E1%BA%BF%20gi%E1%BB%9Bi%20v%E1%BB%81%20c%C3%B4ng%20nghi%E1%BB%87p%20h%C3%B3a%20ch%E1%BA%A5t%20c%C3%A1c%20s%E1%BA%A3n%20ph%E1%BA%A9m%20keo%20c%E1%BB%A7a%20Hichem%20lu%C3%B4n%20cam%20k%E1%BA%BFt%20%C4%91%E1%BA%A3m%20b%E1%BA%A3o%20ch%E1%BA%A5t%20l%C6%B0%E1%BB%A3ng%20t%E1%BB%91t%20nh%E1%BA%A5t%20ph%C3%B9%20h%E1%BB%A3p%20v%E1%BB%9Bi%20m%E1%BB%8Di%20c%C3%B4ng%20tr%C3%ACnh%20v%C3%A0%20kh%C3%AD%20h%E1%BA%ADu%20nhi%E1%BB%87t%20%C4%91%E1%BB%9Bi%20%E1%BB%9F%20Vi%E1%BB%87t%20Nam.%0D%0AH%C6%A1n%20m%E1%BB%99t%20th%E1%BA%ADp%20k%E1%BB%B7%20h%C3%ACnh%20th%C3%A0nh%20v%C3%A0%20ph%C3%A1t%20tri%E1%BB%83n%20Hichem%20theo%20%C4%91u%E1%BB%95i%20s%E1%BB%A9%20m%E1%BB%87nh%20v%C3%AC%20m%E1%BB%99t%20m%C3%B4i%20tr%C6%B0%E1%BB%9Dng%20xanh%20mang%20t%E1%BB%9Bi%20nh%E1%BB%AFng%20gi%C3%A1%20tr%E1%BB%8B%20t%E1%BB%91t%20%C4%91%E1%BA%B9p%20nh%E1%BA%A5t%20cho%20c%E1%BB%99ng%20%C4%91%E1%BB%93ng%20b%E1%BA%B1ng%20nh%E1%BB%AFng%20s%E1%BA%A3n%20ph%E1%BA%A9m%20h%C3%B3a%20ch%E1%BA%A5t%20c%C3%B4ng%20nghi%E1%BB%87p%20An%20to%C3%A0n%20%E2%80%93%20Ch%E1%BA%A5t%20l%C6%B0%E1%BB%A3ng%20%E2%80%93%20Kh%C3%A1c%20bi%E1%BB%87t.%20%0D%0A%0D%0A%C4%90%C3%A2y%20l%C3%A0%20%E1%BB%A9ng%20d%E1%BB%A5ng%20App%20Mobile%20ch%C3%ADnh%20th%E1%BB%A9c%20c%E1%BB%A7a%20HICHEM-VI%E1%BB%86T%20NAM%2C%20%E1%BB%A9ng%20d%E1%BB%A5ng%20gi%E1%BB%9Bi%20thi%E1%BB%87u%20c%C3%A1c%20s%E1%BA%A3n%20ph%E1%BA%A9m%20c%E1%BB%A7a%20C%C3%B4ng%20ty%2C%20th%C3%B4ng%20tin%20v%E1%BB%81%20c%C3%A1c%20ho%E1%BA%A1t%20%C4%91%E1%BB%99ng%20c%E1%BB%A7a%20c%C3%B4ng%20ty%2C%20nh%E1%BA%B1m%20gi%C3%BAp%20cho%20ng%C6%B0%E1%BB%9Di%20ti%C3%AAu%20d%C3%B9ng%2C%20nh%C3%A0%20ph%C3%A2n%20ph%E1%BB%91i%20%C4%91%E1%BA%A1i%20l%C3%BD%20c%C3%B3%20%C4%91%C6%B0%E1%BB%A3c%20nh%E1%BB%AFng%20th%C3%B4ng%20tin%20nhanh%20nh%E1%BA%A5t%20%2C%20ch%C3%ADnh%20th%E1%BB%A9c%20t%E1%BB%AB%20c%C3%B4ng%20ty%20ph%E1%BB%A5c%20v%E1%BB%A5%20cho%20vi%E1%BB%87c%20kinh%20doanh%20c%E1%BB%A7a%20m%C3%ACnh..%0D%0ANgo%C3%A0i%20ra%20%E1%BB%A9ng%20d%E1%BB%A5ng%20c%C3%B2n%20c%C3%B3%20nhi%E1%BB%81u%20c%C3%B4ng%20c%E1%BB%A5%20d%C3%A0nh%20cho%20ph%C3%B2ng%20Marketing%20v%C3%A0%20ph%C3%B2ng%20b%C3%A1n%20h%C3%A0ng%20nh%E1%BA%B1m%20t%C4%83ng%20n%C4%83ng%20su%E1%BA%A5t%20v%C3%A0%20hi%E1%BB%87u%20qu%E1%BA%A3%20kinh%20doanh.%0D%0A%0D%0AT%C6%B0%C6%A1ng%20th%C3%ADch%3A%20C%C3%A1c%20d%C3%B2ng%20m%C3%A1y%20smartphone%2C%20m%C3%A1y%20t%C3%ADnh%20b%E1%BA%A3ng%20ch%E1%BA%A1y%20h%E1%BB%87%20%C4%91i%E1%BB%81u%20h%C3%A0nh%20IOS.%0D%0A%0D%0ALi%C3%AAn%20h%E1%BB%87%3A%0D%0A%20%20Hotline%201900%2063%2067%2019%0D%0A%20%20support%40hichemvn.com%0D%0A%20%20www.hichemvn.com</description>
+  <page id="login1.html" type="login" kind="html" transition="NONE" slidepageid="" slidetransition="slide" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" title="" logo="" interstitialadtype="none" transitionsound="" hidetabbaratpush="no" zoomEnabled="false" hideLoadingAnimation="false" shownavbar="yes" loadWebUrlsInSameWebView="false" backgroundColor="">
+    <loginusers>
+      <login user="thanhhuong" password="dGhhbmhodW9uZw==" url="tab5.html" email="tungvietcommunication@gmail.com" />
+    </loginusers>
+  </page>
+  <page id="tab6COPY.html" type="wpstartmenu" kind="html" transition="PUSH_FROM_BOTTOM" slidepageid="none" slidetransition="" hasreviews="yes" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" hasreviewhtmlkey="no" title="Công cụ Kinh doanh" logo="" shownavbar="yes" openlinksonsametabview="no" zoomEnabled="false" hideLoadingAnimation="false" interstitialadtype="none" transitionsound="" hidetabbaratpush="no" loadWebUrlsInSameWebView="false" backgroundColor="">
+  </page>
+  <file id="login_register.xml" newsfile="yes" />
+  <page id="tab5.html" type="login" kind="html" transition="" slidepageid="" slidetransition="slide" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" title="Công cụ Sales" logo="" shownavbar="yes" openlinksonsametabview="no" zoomEnabled="false" hideLoadingAnimation="false" loadWebUrlsInSameWebView="false" backgroundColor="">
+    <loginusers>
+      <login user="hichem" password="a2VvaGljaGVt" url="tab6COPY.html" email="tungvietcommunication@gmail.com" />
+    </loginusers>
+  </page>
+  <page id="tab2.html" type="mobile" kind="html" transition="" slidepageid="" slidetransition="slide" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" title="Thông tin về sản phẩm" logo="" shownavbar="yes" openlinksonsametabview="no" zoomEnabled="true" hideLoadingAnimation="false" loadWebUrlsInSameWebView="false" backgroundColor="" />
+  <page id="tab3.html" type="mobile" kind="html" transition="" slidepageid="" slidetransition="slide" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" title="Tin tức chính thức của công ty" logo="" shownavbar="yes" openlinksonsametabview="no" zoomEnabled="true" hideLoadingAnimation="false" loadWebUrlsInSameWebView="false" backgroundColor="" />
+  <page id="tracnghiembaocao.html" type="quiz" kind="native" transition="ZOOM_IN" slidepageid="" slidetransition="slide" hasreviews="no" hassend="no" hasfields="false" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" quiztitle="Quiz Report : Tìm hiểu về các Sản phẩm của Hichem " quizrandomize="1" quizbgimage="BG-HICHEM-640x960.png" quizbuttonsbgimage="quiz_button@2x.png" title="Trắc nghiệm tìm hiểu" logo="" interstitialadtype="none" hidetabbaratpush="no" shownavbar="yes" />
+  <page id="qrcodescanner1.html" type="qrcodescanner" module="SCQRCodeScanner" kind="native" transition="NONE" slidepageid="" slidetransition="slide" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" title="Quét mã sản phẩm" logo="" interstitialadtype="none" hidetabbaratpush="no" shownavbar="yes" />
+  <page id="gametuongtac.html" type="puzzle" kind="native" transition="NONE" slidepageid="none" slidetransition="" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" hasreviewhtmlkey="no" title="Game tương tác" logo="" interstitialadtype="none" hidetabbaratpush="no" shownavbar="yes">
+    <levelInfo title="Difficult" rows="4" nextPage="" />
+    <levelInfo title="Easy" rows="3" nextPage="" />
+    <image>anhghep4.png</image>
+  </page>
+  <page id="tailieusanpham.html" type="pdfreader" kind="native" transition="NONE" slidepageid="none" slidetransition="" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" hasreviewhtmlkey="no" textDirection="rtl" title="Catalog sản phẩm" logo="" interstitialadtype="none" shownavbar="yes">
+    <pdffile>Catalogue_Hichem_T6072017.pdf</pdffile>
+  </page>
+  <page id="scandocument1.html" type="scandocument" kind="native" transition="NONE" slidepageid="" slidetransition="slide" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" title="Scan tài liệu" logo="" interstitialadtype="none" hidetabbaratpush="no" shownavbar="yes" />
+  <page id="maytinh.html" type="lengthcal2" module="tashlikHtmlPackage" kind="html" transition="NONE" slidepageid="" slidetransition="slide" hasreviews="no" hassend="no" hasfields="false" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" title="" logo="" interstitialadtype="none" transitionsound="" hidetabbaratpush="no" zoomEnabled="false" hideLoadingAnimation="false" shownavbar="yes" loadWebUrlsInSameWebView="false" backgroundColor="" />
+  <page id="tailieuGTSP.html" type="slide" kind="native" transition="NONE" slidepageid="none" slidetransition="" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" hasreviewhtmlkey="no" title="" logo="" interstitialadtype="none" hidetabbaratpush="no" shownavbar="yes" />
+  <page id="mobile1.html" type="mobile" kind="html" transition="NONE" slidepageid="" slidetransition="slide" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" title="" logo="" interstitialadtype="none" transitionsound="" hidetabbaratpush="no" zoomEnabled="false" hideLoadingAnimation="false" shownavbar="yes" loadWebUrlsInSameWebView="false" backgroundColor="" />
+  <restrictedaccess>
+    <feature id="announcements" enabled="true" />
+    <feature id="calendar" enabled="true" />
+    <feature id="coupon" enabled="true" />
+    <feature id="geofences" enabled="true" />
+    <feature id="loyalty" enabled="true" />
+    <feature id="map" enabled="true" />
+    <feature id="productorder" enabled="true" />
+    <feature id="pushnotifications" enabled="true" />
+    <feature id="Booking" enabled="true" />
+  </restrictedaccess>
+  <rateapp appleid="" rateatlaunch="no" rateatrelaunch="no" message="" cancelmessage="" remindmessage="" actionmessage="" />
+  <ads allowUsingAdvertisingId="false" />
+  <admobpublisher id="" interstitialUnitId="" />
+  <doubleclickpublisher unitId="" />
+  <pollfish apiKey="" padding="0" position="na" />
+  <revmobappid id="" />
+  <scads refreshRate="30" />
+  <googleanalyticsid id="" />
+  <localizablelanguage value="en" />
+  <paypalappid id="" />
+  <fbapp apikey="435752753167945" />
+  <androidAppLicensing enabled="false" publicKey="" />
+  <apkExpansionFiles enabled="false" />
+  <androidInAppBilling enabled="false" />
+  <android installLocation="auto" />
+  <pdftron licenseKey="" />
+  <webView bouncesEnabled="false" hideLoadingAnimation="false" externalSiteZoomEnabled="false" />
+  <sharepointclient url="" username="" password="" />
+  <appstorelink>
+  </appstorelink>
+  <googleMaps androidApiV2Key="AIzaSyB8Mf6vGtk5z06NQ--TfJ6tsgLkymMp82k" />
+  <baiduMaps baiduMapsApiKeyAndroid="" baiduMapsApiKeyiOS="" />
+  <webapp statusBarStyle="default" iconsStyle="precomposed" offlineModeEnabled="false" inAppLinks="false" />
+  <locationServices startupAuthorizationType="auto">
+    <inUseDescription>
+    </inUseDescription>
+    <alwaysDescription>
+    </alwaysDescription>
+  </locationServices>
+  <inAppSettings>
+    <setting id="forceSync" enabled="false" />
+    <setting id="clearResources" enabled="false" />
+    <setting id="restoreInAppPurchase" enabled="false" />
+  </inAppSettings>
+  <page id="peopledirectory1.html" type="peopledirectory" module="SCPeopleDirectory" kind="native" transition="NONE" slidepageid="" slidetransition="slide" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" title="" logo="" interstitialadtype="none" hidetabbaratpush="no" shownavbar="yes" />
+  <authentication />
+  <file id="order.html" newsfile="yes" />
+  <file id="order.html.xml" newsfile="yes" />
+  <file id="productorder.html" newsfile="yes" />
+  <page id="nhaphanphoi.html" type="feedback" kind="native" transition="NONE" slidepageid="" slidetransition="slide" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" sendtoaddress="support@hichemvn.com" headerimage="logo-hichem-57x57.png" confirmmessage="Cam ơn ban da dang k�. Chung toi se xem xet de xuat va lien he toi ban trong thoi gian som nhat." submitbutton="GỬI THÔNG TIN" nextpage="" subjecttext="ĐKĐL-Hichem" showLocationPicker="yes" autoFillEnabled="false" autoFillSaveOnly="false" clearFormData="false" title="Đăng ký làm nhà phân phối" logo="" interstitialadtype="none" hidetabbaratpush="no" shownavbar="yes" sendtoaddress1="">
+    <field id="field1" label="Họ và tên:" type="text" required="yes" fieldlinescount="4" />
+    <field id="field2" label="Nhu cầu:" type="multilist" required="yes" />
+    <multilist value1="Đăng ký làm đại lý" value2="Đăng ký bán lẻ" value3="Đăng ký nhà thầu" />
+    <field id="field3" label="Email" type="email" required="yes" fieldlinescount="4" />
+    <field id="SUVuWwQWPQQu" label="Điện thoại" type="number" required="yes" fieldlinescount="4" />
+    <field id="iDEqUaMUmyoX" label="Đơn vị ( Nếu là tổ chức)" type="text" required="yes" fieldlinescount="4" />
+    <field id="tqOxDPtuwhLq" label="Chức vụ ( Nếu là tổ chức)" type="text" required="yes" fieldlinescount="4" />
+    <field id="cFRORVUdpfqE" label="Địa chỉ làm đại lý" type="location" required="yes" fieldlinescount="4" />
+    <field id="DGOHDaxeBmmq" label="Thông tin thêm" type="multilinetext" required="yes" fieldlinescount="6" />
+  </page>
+  <page id="chamcong.html" type="feedback" kind="native" transition="FADE" slidepageid="" slidetransition="slide" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" sendtoaddress="chamconghichem@gmail.com" headerimage="logo-hichem-72x72.png" confirmmessage="Chuc ban mot ngay lam viec tot lanh. " submitbutton="Gửi" nextpage="" subjecttext="{ChamCong}- HICHEM" showLocationPicker="yes" autoFillEnabled="false" autoFillSaveOnly="false" clearFormData="false" title="Chấm công" logo="" interstitialadtype="none" hidetabbaratpush="no" shownavbar="yes" sendtoaddress1="mb.hichemvn@gmail.com">
+    <field id="field1" label="Địa điểm làm việc:" type="location" required="yes" fieldlinescount="4" />
+    <field id="field2" label="Ngày:" type="date" required="yes" fieldlinescount="4" />
+    <field id="field3" label="Giờ:" type="time" required="yes" fieldlinescount="4" />
+    <field id="hdePPFPyNDUs" label="CBNV" type="text" required="no" fieldlinescount="4" />
+    <field id="aoplqbTGTiqV" label="Phòng ban" type="text" required="yes" fieldlinescount="4" />
+    <field id="btouOAbAxmgB" label="Chũ ký xác nhận" type="signature" required="yes" fieldlinescount="4" />
+  </page>
+  <page id="vechungtoi.html" type="VerticalSlider" kind="html" transition="NONE" slidepageid="" slidetransition="slide" hasreviews="no" hassend="no" hasfields="false" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" title="" logo="" shownavbar="yes" interstitialadtype="none" transitionsound="" hidetabbaratpush="no" zoomEnabled="false" loadWebUrlsInSameWebView="false" backgroundColor="">
+  </page>
+  <page id="thanhtuu.html" type="slide" kind="native" transition="PUSH_FROM_TOP" slidepageid="none" slidetransition="" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" hasreviewhtmlkey="no" title="Thành tựu công ty" logo="" interstitialadtype="none" hidetabbaratpush="no" shownavbar="yes" />
+  <page id="tienich.html" type="largebuttonmenu" kind="html" transition="NONE" slidepageid="none" slidetransition="none" hasreviews="yes" hassend="yes" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" hasreviewhtmlkey="no" title="Công cụ tiện ích" logo="" interstitialadtype="none" transitionsound="" hidetabbaratpush="no" zoomEnabled="true" hideLoadingAnimation="false" shownavbar="yes" loadWebUrlsInSameWebView="false" backgroundColor="" />
+  <page id="giavang.html" type="mobile" kind="html" transition="FADE" slidepageid="" slidetransition="slide" hasreviews="no" hassend="yes" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" title="Giá vàng hàng ngày" logo="" interstitialadtype="none" transitionsound="" hidetabbaratpush="no" zoomEnabled="true" hideLoadingAnimation="false" shownavbar="yes" loadWebUrlsInSameWebView="false" backgroundColor="" />
+  <page id="hkentries1.html" type="bmicalculator" kind="native" transition="NONE" slidepageid="none" slidetransition="" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" hasreviewhtmlkey="no" title="" logo="" shownavbar="yes" interstitialadtype="none" hidetabbaratpush="no">
+    <results>
+      <result imageName="bmicalcitem1.png" message="You are too thin! You will need to gain and develop muscle to be considered normal. Click here for muscle gain tips and info!" pageName="bmicalcresult1.html" />
+      <result imageName="bmicalcitem2.png" message="You are within normal bounds! See our Fitness Tips and Info for more details on how to become fit or stay that way." pageName="bmicalcresult2.html" />
+      <result imageName="bmicalcitem3.png" message="You are overweight! You need to lose weight to avoid any further health issues! Click here to learn more about losing undesired weight." pageName="bmicalcresult3.html" />
+    </results>
+  </page>
+  <page id="chungkhoan.html" type="mobile" kind="html" transition="NONE" slidepageid="" slidetransition="slide" hasreviews="no" hassend="yes" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" title="Giá chứng khoán online" logo="" interstitialadtype="none" transitionsound="" hidetabbaratpush="no" zoomEnabled="true" hideLoadingAnimation="false" shownavbar="yes" loadWebUrlsInSameWebView="false" backgroundColor="" />
+  <page id="tygiahoidoai.html" type="mobile" kind="html" transition="NONE" slidepageid="" slidetransition="slide" hasreviews="no" hassend="yes" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" title="Tỷ giá hối đoái" logo="" interstitialadtype="none" transitionsound="" hidetabbaratpush="no" zoomEnabled="true" hideLoadingAnimation="false" shownavbar="yes" loadWebUrlsInSameWebView="false" backgroundColor="" />
+  <dropboxapp dropboxapikey="" />
+  <page id="lienhe.html" type="slide" kind="native" transition="NONE" slidepageid="none" slidetransition="" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" hasreviewhtmlkey="no" title="Liên hệ" logo="" interstitialadtype="none" hidetabbaratpush="no" shownavbar="yes" />
+  <rotationapp>true</rotationapp>
+  <androidapptype>0</androidapptype>
+  <androidcategory>0</androidcategory>
+  <androidgamecategory>0</androidgamecategory>
+  <androidpromovideo>
+  </androidpromovideo>
+  <googlePrivacyPolicyUrl>
+  </googlePrivacyPolicyUrl>
+  <promotext>C%C3%B4ng%20ty%20TNHH%20Hichem%20%20l%C3%A0%20m%E1%BB%99t%20trong%20nh%E1%BB%AFng%20%C4%91%C6%A1n%20v%E1%BB%8B%20h%C3%A0ng%20%C4%91%E1%BA%A7u%20cung%20c%E1%BA%A5p%20keo%20d%C3%A1n%20cho%20c%C3%A1c</promotext>
+  <androidcontentratingemail>tungvietcommunication@gmail.com</androidcontentratingemail>
+  <androidcontentratingcategory>0</androidcontentratingcategory>
+  <androidC2DM enabled="true" altEnabled="true" />
+  <androidpermissions>
+    <permission name="android.permission.INTERNET" enabled="true" />
+    <permission name="android.permission.ACCESS_COARSE_LOCATION" enabled="true" />
+    <permission name="android.permission.ACCESS_FINE_LOCATION" enabled="true" />
+    <permission name="android.permission.WRITE_EXTERNAL_STORAGE" enabled="true" />
+    <permission name="android.permission.ACCESS_NETWORK_STATE" enabled="true" />
+    <permission name="android.permission.READ_PHONE_STATE" enabled="true" />
+    <permission name="android.permission.RECORD_AUDIO" enabled="true" />
+    <permission name="android.permission.CAMERA" enabled="true" />
+    <permission name="android.permission.VIBRATE" enabled="false" />
+    <permission name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" enabled="false" />
+    <permission name="android.permission.RECEIVE_SMS" enabled="false" />
+    <permission name="android.permission.RECORD_VIDEO" enabled="false" />
+    <permission name="android.permission.MODIFY_AUDIO_SETTINGS" enabled="false" />
+    <permission name="android.permission.READ_CONTACTS" enabled="false" />
+    <permission name="android.permission.WRITE_CONTACTS" enabled="false" />
+    <permission name="android.permission.GET_ACCOUNTS" enabled="false" />
+    <permission name="android.permission.BROADCAST_STICKY" enabled="false" />
+  </androidpermissions>
+  <androidversion>1.1</androidversion>
+  <androidversioncode>3</androidversioncode>
+  <androidbundlename>vn.hichem.hichem</androidbundlename>
+  <androidshortappname>HICHEM</androidshortappname>
+  <syncenabled>false</syncenabled>
+  <file id="tracnghiembaocao.html" newsfile="yes" />
+  <page id="ghethamdailymienNam.html" type="feedback" kind="native" transition="ZOOM_IN" slidepageid="" slidetransition="slide" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" sendtoaddress="ghethamdailyhichem@gmail.com" headerimage="Icon-60@2x.png" confirmmessage="Ban da hoan thanh cong viec . Chung ta cung nhau co gang va phoi hop phat huy nha!" submitbutton="GỬI THÔNG TIN" nextpage="" subjecttext="Báo cáo ghé thăm đại lý" showLocationPicker="yes" autoFillEnabled="false" autoFillSaveOnly="false" clearFormData="false" title="Ghé thăm đại lý" logo="" interstitialadtype="none" hidetabbaratpush="no" shownavbar="yes" sendtoaddress1="mn.hichemvn@gmail.com">
+    <field id="trxiqUFtbuPS" label="Tên đại lý:" type="text" required="no" fieldlinescount="4" />
+    <field id="field1" label="Địa chỉ:" type="location" required="yes" fieldlinescount="4" />
+    <field id="field2" label="Ngày:" type="date" required="yes" fieldlinescount="4" />
+    <field id="field3" label="Thời gian:" type="time" required="yes" fieldlinescount="4" />
+    <field id="oaHuOlqWOxQq" label="Nhân viên phụ trách:" type="text" required="yes" fieldlinescount="4" />
+    <field id="wSJqFBPBRUSS" label="Đơn vị, phòng ban:" type="text" required="yes" fieldlinescount="4" />
+    <field id="zyUondiPWxDq" label="Khu vực:" type="text" required="yes" fieldlinescount="4" />
+    <field id="obHOowJjqVau" label="Chụp ảnh đại lý" type="camera" required="yes" fieldlinescount="4" />
+    <field id="EzftoJljURRl" label="Chương trình" type="text" required="no" fieldlinescount="4" />
+    <field id="NjsLXfPGjITa" label="Đánh giá nhận xét:" type="multilinetext" required="no" fieldlinescount="3" />
+    <field id="aJDPBFOcQQjE" label="Ý kiến đại lý" type="voicerecord" required="no" fieldlinescount="4" />
+    <field id="hFLumvotSkKO" label="Xác nhận nhân viên" type="signature" required="yes" fieldlinescount="4" />
+    <field id="MoOqFsrKJhmD" label="Xác nhận đại lý" type="signature" required="yes" fieldlinescount="4" />
+    <field id="XMXGqlFBtIMu" label="Lựa chọn sản phẩm" type="multilist" required="yes" />
+    <multilist value1="Keo chuyên dụng dán tấm Alu" value2="Keo cho kính vách dựng" value3="Keo chuyên dụng cho kính hộp" value4="KEO SILICONE AXIT CAO CẤP CHO NHÔM KÍNH" value5="KEO SILICONE TRÁM KHE HỞ" value6="KEO SILICONE TRUNG TÍNH CAO CẤP CHO CỬA NHỰA" value7="KEO CHO NGÀNH Ô TÔ" value8="SÚNG BƠM KEO" value9="DAO CẮT CÔNG NGHIỆP OLFA" value10="" />
+    <field id="RghFtfJIukms" label="Location" type="saveoption" required="no" fieldlinescount="1" />
+  </page>
+  <page id="ghethamdailymienTrung.html" type="feedback" kind="native" transition="ZOOM_IN" slidepageid="" slidetransition="slide" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" sendtoaddress="ghethamdailyhichem@gmail.com" headerimage="Icon-60@2x.png" confirmmessage="Ban da hoan thanh cong viec . Chung ta cung nhau co gang va phoi hop phat huy nha!" submitbutton="GỬI THÔNG TIN" nextpage="" subjecttext="Báo cáo ghé thăm đại lý" showLocationPicker="yes" autoFillEnabled="false" autoFillSaveOnly="false" clearFormData="false" title="Ghé thăm đại lý" logo="" interstitialadtype="none" hidetabbaratpush="no" shownavbar="yes" sendtoaddress1="mt.hichemvn@gmail.com">
+    <field id="trxiqUFtbuPS" label="Tên đại lý:" type="text" required="no" fieldlinescount="4" />
+    <field id="field1" label="Địa chỉ:" type="location" required="yes" fieldlinescount="4" />
+    <field id="field2" label="Ngày:" type="date" required="yes" fieldlinescount="4" />
+    <field id="field3" label="Thời gian:" type="time" required="yes" fieldlinescount="4" />
+    <field id="oaHuOlqWOxQq" label="Nhân viên phụ trách:" type="text" required="yes" fieldlinescount="4" />
+    <field id="wSJqFBPBRUSS" label="Đơn vị, phòng ban:" type="text" required="yes" fieldlinescount="4" />
+    <field id="zyUondiPWxDq" label="Khu vực:" type="text" required="yes" fieldlinescount="4" />
+    <field id="obHOowJjqVau" label="Chụp ảnh đại lý" type="camera" required="yes" fieldlinescount="4" />
+    <field id="EzftoJljURRl" label="Chương trình" type="text" required="no" fieldlinescount="4" />
+    <field id="NjsLXfPGjITa" label="Đánh giá nhận xét:" type="multilinetext" required="no" fieldlinescount="3" />
+    <field id="aJDPBFOcQQjE" label="Ý kiến đại lý" type="voicerecord" required="no" fieldlinescount="4" />
+    <field id="hFLumvotSkKO" label="Xác nhận nhân viên" type="signature" required="yes" fieldlinescount="4" />
+    <field id="MoOqFsrKJhmD" label="Xác nhận đại lý" type="signature" required="yes" fieldlinescount="4" />
+    <field id="XMXGqlFBtIMu" label="Lựa chọn sản phẩm" type="multilist" required="yes" />
+    <multilist value1="Keo chuyên dụng dán tấm Alu" value2="Keo cho kính vách dựng" value3="Keo chuyên dụng cho kính hộp" value4="KEO SILICONE AXIT CAO CẤP CHO NHÔM KÍNH" value5="KEO SILICONE TRÁM KHE HỞ" value6="KEO SILICONE TRUNG TÍNH CAO CẤP CHO CỬA NHỰA" value7="KEO CHO NGÀNH Ô TÔ" value8="SÚNG BƠM KEO" value9="DAO CẮT CÔNG NGHIỆP OLFA" value10="" />
+    <field id="RghFtfJIukms" label="Location" type="saveoption" required="no" fieldlinescount="1" />
+  </page>
+  <page id="chamcongmienNam.html" type="feedback" kind="native" transition="FADE" slidepageid="" slidetransition="slide" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" sendtoaddress="chamconghichem@gmail.com" headerimage="logo-hichem-72x72.png" confirmmessage="Chuc ban mot ngay lam viec tot lanh. " submitbutton="Gửi" nextpage="" subjecttext="{ChamCong}- HICHEM" showLocationPicker="yes" autoFillEnabled="false" autoFillSaveOnly="false" clearFormData="false" title="Chấm công" logo="" interstitialadtype="none" hidetabbaratpush="no" shownavbar="yes" sendtoaddress1="mn.hichemvn@gmail.com">
+    <field id="field1" label="Địa điểm làm việc:" type="location" required="yes" fieldlinescount="4" />
+    <field id="field2" label="Ngày:" type="date" required="yes" fieldlinescount="4" />
+    <field id="field3" label="Giờ:" type="time" required="yes" fieldlinescount="4" />
+    <field id="hdePPFPyNDUs" label="CBNV" type="text" required="no" fieldlinescount="4" />
+    <field id="aoplqbTGTiqV" label="Phòng ban" type="text" required="yes" fieldlinescount="4" />
+    <field id="btouOAbAxmgB" label="Chũ ký xác nhận" type="signature" required="yes" fieldlinescount="4" />
+  </page>
+  <page id="chamcongmienTrung.html" type="feedback" kind="native" transition="FADE" slidepageid="" slidetransition="slide" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" sendtoaddress="chamconghichem@gmail.com" headerimage="logo-hichem-72x72.png" confirmmessage="Chuc ban mot ngay lam viec tot lanh. " submitbutton="Gửi" nextpage="" subjecttext="{ChamCong}- HICHEM" showLocationPicker="yes" autoFillEnabled="false" autoFillSaveOnly="false" clearFormData="false" title="Chấm công" logo="" interstitialadtype="none" hidetabbaratpush="no" shownavbar="yes" sendtoaddress1="mt.hichemvn@gmail.com">
+    <field id="field1" label="Địa điểm làm việc:" type="location" required="yes" fieldlinescount="4" />
+    <field id="field2" label="Ngày:" type="date" required="yes" fieldlinescount="4" />
+    <field id="field3" label="Giờ:" type="time" required="yes" fieldlinescount="4" />
+    <field id="hdePPFPyNDUs" label="CBNV" type="text" required="no" fieldlinescount="4" />
+    <field id="aoplqbTGTiqV" label="Phòng ban" type="text" required="yes" fieldlinescount="4" />
+    <field id="btouOAbAxmgB" label="Chũ ký xác nhận" type="signature" required="yes" fieldlinescount="4" />
+  </page>
+  <page id="BaocaocongviecmienNam.html" type="feedback" kind="native" transition="ZOOM_IN" slidepageid="" slidetransition="slide" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" sendtoaddress="chamconghichem@gmail.com" headerimage="Icon-60@2x.png" confirmmessage="Ban da hoan thanh cong viec. Chung ta cung nhau co gang va phat huy het suc nham dua cong ty ngay cang phat trien." submitbutton="GỬI THÔNG TIN" nextpage="" subjecttext="Báo cáo công việc" showLocationPicker="yes" autoFillEnabled="false" autoFillSaveOnly="false" clearFormData="false" title="Báo cáo công việc hàng ngày" logo="" interstitialadtype="none" hidetabbaratpush="no" shownavbar="yes" sendtoaddress1="mn.hichemvn@gmail.com">
+    <field id="field1" label="Địa chỉ:" type="location" required="yes" fieldlinescount="4" />
+    <field id="field2" label="Ngày:" type="date" required="yes" fieldlinescount="4" />
+    <field id="field3" label="Thời gian:" type="time" required="yes" fieldlinescount="4" />
+    <field id="zyUondiPWxDq" label="Khu vực:" type="text" required="yes" fieldlinescount="4" />
+    <field id="EzftoJljURRl" label="Chương trình:" type="text" required="no" fieldlinescount="4" />
+    <field id="XMXGqlFBtIMu" label="Lựa chọn sản phẩm" type="multilist" required="yes" />
+    <multilist value1="Keo cho vách kinh dựng" value2="Keo cho ngành ô tô" value3="Keo chuyên dụng cho kính hộp" value4="Keo chuyên dụng dán tấm Alu" value5="Keo Silicone Axit cao cấp" value6="Keo Silicone trám keo hở" value7="Keo Silicone trung tính cao cấp cho cửa nhựa" value8="Súng bơm keo" value9="Dao cắt công nghiệp" value10="" />
+    <field id="RghFtfJIukms" label="Hàng tồn:" type="number" required="no" fieldlinescount="4" />
+    <field id="JDddhyAbshpA" label="Nhập:" type="number" required="yes" fieldlinescount="4" />
+    <field id="SjjPxHzBCWAp" label="Xuất:" type="number" required="yes" fieldlinescount="4" />
+    <field id="NjsLXfPGjITa" label="Đánh giá nhận xét:" type="multilinetext" required="no" fieldlinescount="3" />
+    <field id="aJDPBFOcQQjE" label="Ý kiến đại lý" type="voicerecord" required="yes" fieldlinescount="4" />
+    <field id="hFLumvotSkKO" label="Xác nhận nhân viên" type="signature" required="yes" fieldlinescount="4" />
+    <field id="MoOqFsrKJhmD" label="Xác nhận đại lý" type="signature" required="yes" fieldlinescount="4" />
+    <field id="eVqztsMEwjXd" label="Đặt hàng" type="email" required="yes" fieldlinescount="4" />
+    <field id="qBuwQTuxMtMO" label="Hình ảnh" type="image" required="yes" fieldlinescount="4" />
+  </page>
+  <page id="BaocaocongviecmienTrung.html" type="feedback" kind="native" transition="ZOOM_IN" slidepageid="" slidetransition="slide" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" sendtoaddress="chamconghichem@gmail.com" headerimage="Icon-60@2x.png" confirmmessage="Ban da hoan thanh cong viec. Chung ta cung nhau co gang va phat huy het suc nham dua cong ty ngay cang phat trien." submitbutton="GỬI THÔNG TIN" nextpage="" subjecttext="Báo cáo công việc" showLocationPicker="yes" autoFillEnabled="false" autoFillSaveOnly="false" clearFormData="false" title="Báo cáo công việc hàng ngày" logo="" interstitialadtype="none" hidetabbaratpush="no" shownavbar="yes" sendtoaddress1="mt.hichemvn@gmail.com">
+    <field id="field1" label="Địa chỉ:" type="location" required="yes" fieldlinescount="4" />
+    <field id="field2" label="Ngày:" type="date" required="yes" fieldlinescount="4" />
+    <field id="field3" label="Thời gian:" type="time" required="yes" fieldlinescount="4" />
+    <field id="zyUondiPWxDq" label="Khu vực:" type="text" required="yes" fieldlinescount="4" />
+    <field id="EzftoJljURRl" label="Chương trình:" type="text" required="no" fieldlinescount="4" />
+    <field id="XMXGqlFBtIMu" label="Lựa chọn sản phẩm" type="multilist" required="yes" />
+    <multilist value1="Keo cho vách kinh dựng" value2="Keo cho ngành ô tô" value3="Keo chuyên dụng cho kính hộp" value4="Keo chuyên dụng dán tấm Alu" value5="Keo Silicone Axit cao cấp" value6="Keo Silicone trám keo hở" value7="Keo Silicone trung tính cao cấp cho cửa nhựa" value8="Súng bơm keo" value9="Dao cắt công nghiệp" value10="" />
+    <field id="RghFtfJIukms" label="Hàng tồn:" type="number" required="no" fieldlinescount="4" />
+    <field id="JDddhyAbshpA" label="Nhập:" type="number" required="yes" fieldlinescount="4" />
+    <field id="SjjPxHzBCWAp" label="Xuất:" type="number" required="yes" fieldlinescount="4" />
+    <field id="NjsLXfPGjITa" label="Đánh giá nhận xét:" type="multilinetext" required="no" fieldlinescount="3" />
+    <field id="aJDPBFOcQQjE" label="Ý kiến đại lý" type="voicerecord" required="yes" fieldlinescount="4" />
+    <field id="hFLumvotSkKO" label="Xác nhận nhân viên" type="signature" required="yes" fieldlinescount="4" />
+    <field id="MoOqFsrKJhmD" label="Xác nhận đại lý" type="signature" required="yes" fieldlinescount="4" />
+    <field id="eVqztsMEwjXd" label="Đặt hàng" type="email" required="yes" fieldlinescount="4" />
+    <field id="qBuwQTuxMtMO" label="Hình ảnh" type="image" required="yes" fieldlinescount="4" />
+  </page>
+  <page id="Baocao.html" type="slideshowmenuitems" kind="html" transition="" slidepageid="none" slidetransition="" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" hasreviewhtmlkey="no" />
+  <page id="BaocaomienNam.html" type="slideshowmenuitems" kind="html" transition="" slidepageid="none" slidetransition="" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" hasreviewhtmlkey="no" />
+  <page id="BaocaomienTrung.html" type="slideshowmenuitems" kind="html" transition="" slidepageid="none" slidetransition="" hasreviews="no" hassend="no" hasfields="no" topadtype="inherited" bottomadtype="inherited" dynamicdata="false" jsonurl="" hidebottombaratpush="no" hasreviewhtmlkey="no" />
+</xml>

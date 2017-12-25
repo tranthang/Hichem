@@ -1,0 +1,17 @@
+<language_codes>
+    <code>
+        <locale>English - United States</locale>
+        <language_code>en</language_code>
+        <lcid_string>en-us</lcid_string>
+    </code>
+    <code>
+        <locale>Dutch - Netherlands</locale>
+        <language_code>nl</language_code>
+        <lcid_string>nl-nl</lcid_string>
+    </code>
+    <code>
+        <locale>French - France</locale>
+        <language_code>fr</language_code>
+        <lcid_string>fr-fr</lcid_string>
+    </code>
+</language_codes>

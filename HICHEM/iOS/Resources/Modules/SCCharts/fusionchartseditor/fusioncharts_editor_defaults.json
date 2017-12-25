@@ -1,0 +1,44 @@
+{
+    "chart":{
+        "caption":"PSA Report",
+        "subcaption":"",
+        "xaxisname":"Year",
+        "yaxisname":"PSA  (in nl/mL)",
+        "palette":"3",
+        "bgcolor":"FFFFFF",
+        "canvasbgcolor":"66D6FF",
+        "canvasbgalpha":"5",
+        "canvasborderthickness":"1",
+        "canvasborderalpha":"20",
+        "legendshadow":"0",
+        "showvalues":"0",
+        "alternatehgridcolor":"ffffff",
+        "alternatehgridalpha":"100",
+        "showborder":"0",
+        "legendborderalpha":"0",
+        "legendiconscale":"1.5",
+        "divlineisdashed":"1"
+    },
+    "categories":[{
+        "category": []
+    }],
+    "dataset":[{
+        "seriesname":"Total PSA",
+        "color":"F97D10",
+        "data":[]
+    },{
+        "seriesname":"Free PSA",
+        "data":[]
+    }],
+    "styles":{
+        "definition":[{
+            "name":"captionFont",
+            "type":"font",
+            "size":"15"
+        }],
+        "application":[{
+        "toobject":"caption",
+        "styles":"captionfont"
+        }]
+    }
+}

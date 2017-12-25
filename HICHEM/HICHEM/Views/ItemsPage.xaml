@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="HICHEM.ItemsPage" x:Name="BrowseItemsPage">
+    <ContentPage.ToolbarItems>
+<!--        <ToolbarItem Text="Add" Clicked="AddItem_Clicked" />-->
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+       
+        <StackLayout>
+        <Image x:Name="LogoHome" HorizontalOptions="FillAndExpand" VerticalOptions="Start" />
+            <ListView x:Name="ItemsListView" ItemsSource="{Binding Items}" VerticalOptions="End" HasUnevenRows="true" IsPullToRefreshEnabled="false" CachingStrategy="RecycleElement" ItemSelected="OnItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" BackgroundColor="#00F900">
+                                <Image Margin="5" WidthRequest="30" HeightRequest="30" Source="{Binding Icon}" HorizontalOptions="Start" />
+                                <StackLayout Padding="10">
+                                    <Label Text="{Binding Text}" LineBreakMode="NoWrap" Style="{DynamicResource ListItemTextStyle}" FontSize="16" />
+                                    <Label Text="{Binding Description}" LineBreakMode="NoWrap" Style="{DynamicResource ListItemDetailTextStyle}" FontSize="13" />
+                                </StackLayout>
+                                <Image WidthRequest="15" HeightRequest="15" Source="listArrow.png" HorizontalOptions="EndAndExpand" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Xamarin.Build.Download.0.4.7\build\Xamarin.Build.Download.props" Condition="Exists('..\packages\Xamarin.Build.Download.0.4.7\build\Xamarin.Build.Download.props')" />
+  <Import Project="..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.props" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{9D0B1027-1AA4-4816-B2BB-50BE54599E3B}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>HICHEM.iOS</RootNamespace>
+    <AssemblyName>HICHEM.iOS</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: Thang Tran (6LFF55S8DM)</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <IOSDebuggerPort>63228</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>VS: vn.hichem.salekit Development</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Distribution: TUNG VIET COMMUNICATION Co., Ltd. (8874MDQ9AU)</CodesignKey>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>hichem huy</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: Thang Tran (6LFF55S8DM)</CodesignKey>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>VS: vn.hichem.salekit Development</CodesignProvision>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer: Thang Tran (6LFF55S8DM)</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <IOSDebuggerPort>59070</IOSDebuggerPort>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>VS: vn.hichem.salekit Development</CodesignProvision>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\packages\Xamarin.Forms.2.5.0.121934\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\packages\Xamarin.Forms.2.5.0.121934\lib\Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.iOS">
+      <HintPath>..\packages\Xamarin.Forms.2.5.0.121934\lib\Xamarin.iOS10\Xamarin.Forms.Platform.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\packages\Xamarin.Forms.2.5.0.121934\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Maps">
+      <HintPath>..\packages\Xamarin.Forms.Maps.2.5.0.121934\lib\Xamarin.iOS10\Xamarin.Forms.Maps.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Maps.iOS">
+      <HintPath>..\packages\Xamarin.Forms.Maps.2.5.0.121934\lib\Xamarin.iOS10\Xamarin.Forms.Maps.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="Plugin.Permissions.Abstractions">
+      <HintPath>..\packages\Plugin.Permissions.2.1.0\lib\Xamarin.iOS10\Plugin.Permissions.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Permissions">
+      <HintPath>..\packages\Plugin.Permissions.2.1.0\lib\Xamarin.iOS10\Plugin.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Geolocator.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Geolocator.4.1.3\lib\Xamarin.iOS10\Plugin.Geolocator.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Geolocator">
+      <HintPath>..\packages\Xam.Plugin.Geolocator.4.1.3\lib\Xamarin.iOS10\Plugin.Geolocator.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Maps">
+      <HintPath>..\packages\Xamarin.Google.iOS.Maps.2.1.0.1\lib\Xamarin.iOS10\Google.Maps.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\netstandard1.3\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity.Abstractions">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.0.3\lib\Xamarin.iOS10\Plugin.Connectivity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Connectivity">
+      <HintPath>..\packages\Xam.Plugin.Connectivity.3.0.3\lib\Xamarin.iOS10\Plugin.Connectivity.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\tab1.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\tab2.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\tab3.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\tab4.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\tab5.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\tab1.imageset\tab1.png" />
+    <ImageAsset Include="Assets.xcassets\tab1.imageset\tab1%402x.png" />
+    <ImageAsset Include="Assets.xcassets\tab1.imageset\tab1%403x.png" />
+    <ImageAsset Include="Assets.xcassets\tab2.imageset\tab2.png" />
+    <ImageAsset Include="Assets.xcassets\tab2.imageset\tab2%402x.png" />
+    <ImageAsset Include="Assets.xcassets\tab2.imageset\tab2%403x.png" />
+    <ImageAsset Include="Assets.xcassets\tab3.imageset\tab3.png" />
+    <ImageAsset Include="Assets.xcassets\tab3.imageset\tab3%402x.png" />
+    <ImageAsset Include="Assets.xcassets\tab3.imageset\tab3%403x.png" />
+    <ImageAsset Include="Assets.xcassets\tab4.imageset\tab4.png" />
+    <ImageAsset Include="Assets.xcassets\tab4.imageset\tab4%402x.png" />
+    <ImageAsset Include="Assets.xcassets\tab4.imageset\tab4%403x.png" />
+    <ImageAsset Include="Assets.xcassets\tab5.imageset\tab5.png" />
+    <ImageAsset Include="Assets.xcassets\tab5.imageset\tab5%402x.png" />
+    <ImageAsset Include="Assets.xcassets\tab5.imageset\tab5%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\bigicon%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\hichem%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\hichem%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\hichemips%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\hichemip%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\hichemip%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\hichemis5%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\hiche%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\hichem7%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\hichemip%401x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\hichem5%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\hichem511%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\hichem711%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\hichem711%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\hichem711%401x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\hichemntf%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\hichem511%401x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\hichemntf%401x.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default%402x.png" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Default-568h%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tab_about.png" />
+    <BundleResource Include="Resources\tab_about%402x.png" />
+    <BundleResource Include="Resources\tab_about%403x.png" />
+    <BundleResource Include="Resources\tab_feed.png" />
+    <BundleResource Include="Resources\tab_feed%402x.png" />
+    <BundleResource Include="Resources\tab_feed%403x.png" />
+    <BundleResource Include="Resources\xamarin_logo.png" />
+    <BundleResource Include="Resources\xamarin_logo%402x.png" />
+    <BundleResource Include="Resources\xamarin_logo%403x.png" />
+    <BundleResource Include="Resources\hichem.png" />
+    <BundleResource Include="Resources\Modules\SCCharts\fusionchartseditor\fusioncharts_editor_defaults.json" />
+    <BundleResource Include="Resources\Modules\SCDynamicList\sharepoint\language_codes.xml" />
+    <BundleResource Include="Resources\46-facebook-512.png" />
+    <BundleResource Include="Resources\889-450x350.jpg" />
+    <BundleResource Include="Resources\aboutus_background.png" />
+    <BundleResource Include="Resources\ABOUTUS26-2-2.jpg" />
+    <BundleResource Include="Resources\Achievement-512.png" />
+    <BundleResource Include="Resources\ADDRESS.png" />
+    <BundleResource Include="Resources\alarm-icon.png" />
+    <BundleResource Include="Resources\androidpromo.png" />
+    <BundleResource Include="Resources\anhghep4.png" />
+    <BundleResource Include="Resources\app.xml" />
+    <BundleResource Include="Resources\appStyles.xml" />
+    <BundleResource Include="Resources\back.jpg" />
+    <BundleResource Include="Resources\background_ipad.jpeg" />
+    <BundleResource Include="Resources\backgroundlogo.png" />
+    <BundleResource Include="Resources\Baocao.html" />
+    <BundleResource Include="Resources\Baocaocongviec.html" />
+    <BundleResource Include="Resources\BaocaocongviecmienNam.html" />
+    <BundleResource Include="Resources\BaocaocongviecmienTrung.html" />
+    <BundleResource Include="Resources\BaocaomienNam.html" />
+    <BundleResource Include="Resources\BaocaomienTrung.html" />
+    <BundleResource Include="Resources\BG-HICHEM-180x120.png" />
+    <BundleResource Include="Resources\BG-HICHEM-320x480.png" />
+    <BundleResource Include="Resources\BG-HICHEM-640x960.png" />
+    <BundleResource Include="Resources\BG-ios-06.jpg" />
+    <BundleResource Include="Resources\BGNOIDUNG02.jpg" />
+    <BundleResource Include="Resources\BGNOIDUNG03.jpg" />
+    <BundleResource Include="Resources\BGNOIDUNG03.png" />
+    <BundleResource Include="Resources\BGNOIDUNG04.jpg" />
+    <BundleResource Include="Resources\BGNOIDUNG05.jpg" />
+    <BundleResource Include="Resources\bigicon.png" />
+    <BundleResource Include="Resources\bigicon%402x.png" />
+    <BundleResource Include="Resources\Bring-To-Front-32.png" />
+    <BundleResource Include="Resources\calc1.html" />
+    <BundleResource Include="Resources\calculator-icon.png" />
+    <BundleResource Include="Resources\calendar1.html" />
+    <BundleResource Include="Resources\calendar1.html.json" />
+    <BundleResource Include="Resources\calendar-icon.png" />
+    <BundleResource Include="Resources\camera-icon.png" />
+    <BundleResource Include="Resources\Catalogue_Hichem_T6072017.pdf" />
+    <BundleResource Include="Resources\CEM_website_icon-SALES.png" />
+    <BundleResource Include="Resources\chamcong.html" />
+    <BundleResource Include="Resources\chamcongmienNam.html" />
+    <BundleResource Include="Resources\chamcongmienTrung.html" />
+    <BundleResource Include="Resources\chungkhoan.html" />
+    <BundleResource Include="Resources\CHUNGKHOAN.png" />
+    <BundleResource Include="Resources\circles_color.png" />
+    <BundleResource Include="Resources\classie.js" />
+    <BundleResource Include="Resources\color-icons-green-home.png" />
+    <BundleResource Include="Resources\common.js" />
+    <BundleResource Include="Resources\component.css" />
+    <BundleResource Include="Resources\COUPON.png" />
+    <BundleResource Include="Resources\coupon_divider.png" />
+    <BundleResource Include="Resources\coupon1.html" />
+    <BundleResource Include="Resources\couponlock.png" />
+    <BundleResource Include="Resources\couponqr.png" />
+    <BundleResource Include="Resources\couponunlock.png" />
+    <BundleResource Include="Resources\DAOCATCONGNGHIEP1.jpg" />
+    <BundleResource Include="Resources\daocut.jpg" />
+    <BundleResource Include="Resources\default_note_background_image.jpg" />
+    <BundleResource Include="Resources\Default-667h%402x.png" />
+    <BundleResource Include="Resources\Default-736h%403x.png" />
+    <BundleResource Include="Resources\defaultscanqrcode.png" />
+    <BundleResource Include="Resources\demo.css" />
+    <BundleResource Include="Resources\demo-image.jpg" />
+    <BundleResource Include="Resources\docs-icon.png" />
+    <BundleResource Include="Resources\FACEBOOK.png" />
+    <BundleResource Include="Resources\facebookfeeds1.html" />
+    <BundleResource Include="Resources\facebookfeeds1.html.json" />
+    <BundleResource Include="Resources\follow%402x.png" />
+    <BundleResource Include="Resources\follow_selected%402x.png" />
+    <BundleResource Include="Resources\FollowUs.png" />
+    <BundleResource Include="Resources\footer.png" />
+    <BundleResource Include="Resources\footer_ipad.png" />
+    <BundleResource Include="Resources\footer_iphone.png" />
+    <BundleResource Include="Resources\footersidebar.png" />
+    <BundleResource Include="Resources\gallery.png" />
+    <BundleResource Include="Resources\gallery%402x.png" />
+    <BundleResource Include="Resources\gallery_selected.png" />
+    <BundleResource Include="Resources\gallery_selected%402x.png" />
+    <BundleResource Include="Resources\gallery-icon.png" />
+    <BundleResource Include="Resources\games-icon.png" />
+    <BundleResource Include="Resources\gametuongtac.html" />
+    <BundleResource Include="Resources\GAP-FILLER-450x350.jpg" />
+    <BundleResource Include="Resources\ghethamdaily.html" />
+    <BundleResource Include="Resources\ghethamdailymienNam.html" />
+    <BundleResource Include="Resources\ghethamdailymienTrung.html" />
+    <BundleResource Include="Resources\giavang.html" />
+    <BundleResource Include="Resources\GIAVANG.png" />
+    <BundleResource Include="Resources\globe-512.png" />
+    <BundleResource Include="Resources\grey_new_seo2-41-512.png" />
+    <BundleResource Include="Resources\header.png" />
+    <BundleResource Include="Resources\header-logoHICHEM.png" />
+    <BundleResource Include="Resources\header-logo-hichem.png" />
+    <BundleResource Include="Resources\helvetica-light.ttf" />
+    <BundleResource Include="Resources\hichem601-450x350.png" />
+    <BundleResource Include="Resources\hkentries1.html" />
+    <BundleResource Include="Resources\hkentries1.html.json" />
+    <BundleResource Include="Resources\home-512.png" />
+    <BundleResource Include="Resources\howunlockcoupon.html" />
+    <BundleResource Include="Resources\icon.png" />
+    <BundleResource Include="Resources\icon%402x.png" />
+    <BundleResource Include="Resources\icon-144.png" />
+    <BundleResource Include="Resources\icon-36.png" />
+    <BundleResource Include="Resources\Icon-60%402x.png" />
+    <BundleResource Include="Resources\Icon-60%403x.png" />
+    <BundleResource Include="Resources\icon-72.png" />
+    <BundleResource Include="Resources\icon-96.png" />
+    <BundleResource Include="Resources\icon-cart.png" />
+    <BundleResource Include="Resources\icon-facebook.png" />
+    <BundleResource Include="Resources\icon-gallery.png" />
+    <BundleResource Include="Resources\icon-mail.png" />
+    <BundleResource Include="Resources\icon-map.png" />
+    <BundleResource Include="Resources\iconmenupagearrow.png" />
+    <BundleResource Include="Resources\icon-notification-large-hdpi.png" />
+    <BundleResource Include="Resources\icon-notification-large-ldpi.png" />
+    <BundleResource Include="Resources\icon-notification-large-mdpi.png" />
+    <BundleResource Include="Resources\icon-notification-large-xhdpi.png" />
+    <BundleResource Include="Resources\icon-notification-large-xxhdpi.png" />
+    <BundleResource Include="Resources\icon-order.png" />
+    <BundleResource Include="Resources\icon-scissors.png" />
+    <BundleResource Include="Resources\icon-star.png" />
+    <BundleResource Include="Resources\image01.jpg" />
+    <BundleResource Include="Resources\image02.jpg" />
+    <BundleResource Include="Resources\image03.jpg" />
+    <BundleResource Include="Resources\image04.jpg" />
+    <BundleResource Include="Resources\image05.jpg" />
+    <BundleResource Include="Resources\imagelist1.html" />
+    <BundleResource Include="Resources\Instrument-Scissors-32.png" />
+    <BundleResource Include="Resources\iPadheader.png" />
+    <BundleResource Include="Resources\jquery-1.5.1.min.js" />
+    <BundleResource Include="Resources\KEOCHOKINHVACHDUNG1.jpg" />
+    <BundleResource Include="Resources\keotamalu.jpg" />
+    <BundleResource Include="Resources\kinhop.png" />
+    <BundleResource Include="Resources\largebuttonmenuitembg.png" />
+    <BundleResource Include="Resources\largebuttonmenuitembgipad.png" />
+    <BundleResource Include="Resources\largebuttonmenuitemchat.png" />
+    <BundleResource Include="Resources\largebuttonmenuitemfile.png" />
+    <BundleResource Include="Resources\largebuttonmenuitemimage.png" />
+    <BundleResource Include="Resources\largebuttonmenuitemlocation.png" />
+    <BundleResource Include="Resources\largebuttonmenuitemok.png" />
+    <BundleResource Include="Resources\LICHHEN.png" />
+    <BundleResource Include="Resources\lienhe.html" />
+    <BundleResource Include="Resources\LIENHE1.jpg" />
+    <BundleResource Include="Resources\line-divider.png" />
+    <BundleResource Include="Resources\listArrow.png" />
+    <BundleResource Include="Resources\listArrowSel.png" />
+    <BundleResource Include="Resources\loading.gif" />
+    <BundleResource Include="Resources\locationfinder1.html" />
+    <BundleResource Include="Resources\locationfinder1.html.xml" />
+    <BundleResource Include="Resources\login_register.xml" />
+    <BundleResource Include="Resources\login1.html" />
+    <BundleResource Include="Resources\logo.png" />
+    <BundleResource Include="Resources\logo-hichem-36x36.png" />
+    <BundleResource Include="Resources\logo-hichem-57x57.png" />
+    <BundleResource Include="Resources\logo-hichem-72x72.png" />
+    <BundleResource Include="Resources\logo-hichem-96x96.png" />
+    <BundleResource Include="Resources\map.html" />
+    <BundleResource Include="Resources\maps-icon.png" />
+    <BundleResource Include="Resources\maytinh.html" />
+    <BundleResource Include="Resources\memogame1.html" />
+    <BundleResource Include="Resources\menu.js" />
+    <BundleResource Include="Resources\menu-arrow.png" />
+    <BundleResource Include="Resources\messages-icon.png" />
+    <BundleResource Include="Resources\messenger1.html" />
+    <BundleResource Include="Resources\mobile1.html" />
+    <BundleResource Include="Resources\mobilefacebookbaby.html" />
+    <BundleResource Include="Resources\mobileyoutube.css" />
+    <BundleResource Include="Resources\mobileyoutube1.html" />
+    <BundleResource Include="Resources\modernizr.custom.25376.js" />
+    <BundleResource Include="Resources\nearbylocations1.html" />
+    <BundleResource Include="Resources\nhaphanphoi.html" />
+    <BundleResource Include="Resources\normalize.css" />
+    <BundleResource Include="Resources\notes1.html" />
+    <BundleResource Include="Resources\notes-icon.png" />
+    <BundleResource Include="Resources\order.html.xml" />
+    <BundleResource Include="Resources\oto.jpg" />
+    <BundleResource Include="Resources\pdffile.pdf" />
+    <BundleResource Include="Resources\peopledirectory1.html" />
+    <BundleResource Include="Resources\peopledirectory1.config.xml" />
+    <BundleResource Include="Resources\people-icon.png" />
+    <BundleResource Include="Resources\PHANPHOI.png" />
+    <BundleResource Include="Resources\phone-icon.png" />
+    <BundleResource Include="Resources\picture_background_landscape.png" />
+    <BundleResource Include="Resources\picture_backround_ipad.png" />
+    <BundleResource Include="Resources\picture_page_background.png" />
+    <BundleResource Include="Resources\picturemenucssaddition.css" />
+    <BundleResource Include="Resources\picturespagemenuicon1.png" />
+    <BundleResource Include="Resources\picturespagemenuicon2.png" />
+    <BundleResource Include="Resources\picturespagemenuicon3.png" />
+    <BundleResource Include="Resources\picturespagemenuicon4.png" />
+    <BundleResource Include="Resources\picturespagemenuicon5.png" />
+    <BundleResource Include="Resources\picturespagemenuicon6.png" />
+    <BundleResource Include="Resources\picturespagemenuicon7.png" />
+    <BundleResource Include="Resources\picturespagemenuicon8.png" />
+    <BundleResource Include="Resources\picturespagemenuicon9.png" />
+    <BundleResource Include="Resources\product_icon.png" />
+    <BundleResource Include="Resources\qr.jpg" />
+    <BundleResource Include="Resources\qrcodescanner1.html" />
+    <BundleResource Include="Resources\qrcodevinmilk.jpg" />
+    <BundleResource Include="Resources\quiz_background.png" />
+    <BundleResource Include="Resources\quiz_background%402x.png" />
+    <BundleResource Include="Resources\quiz_button.png" />
+    <BundleResource Include="Resources\quiz_button%402x.png" />
+    <BundleResource Include="Resources\quiz_button%402x~ipad.png" />
+    <BundleResource Include="Resources\quiz_button~ipad.png" />
+    <BundleResource Include="Resources\quiz_question1_image.png" />
+    <BundleResource Include="Resources\quiz_question1_image%402x.png" />
+    <BundleResource Include="Resources\quiz_question2_image.png" />
+    <BundleResource Include="Resources\quiz_question2_image%402x.png" />
+    <BundleResource Include="Resources\quiz_question3_image.png" />
+    <BundleResource Include="Resources\quiz_question3_image%402x.png" />
+    <BundleResource Include="Resources\quiz-board.png" />
+    <BundleResource Include="Resources\quiz-board%402x.png" />
+    <BundleResource Include="Resources\redeemed.png" />
+    <BundleResource Include="Resources\report-icon-001.png" />
+    <BundleResource Include="Resources\reservation.html" />
+    <BundleResource Include="Resources\restaurant.png" />
+    <BundleResource Include="Resources\restaurant%402x.png" />
+    <BundleResource Include="Resources\restaurant_selected.png" />
+    <BundleResource Include="Resources\restaurant_selected%402x.png" />
+    <BundleResource Include="Resources\ribbon_2__.png" />
+    <BundleResource Include="Resources\rightpanelmenucssaddition.css" />
+    <BundleResource Include="Resources\rightpanelmenuicon1.png" />
+    <BundleResource Include="Resources\rightpanelmenuicon2.png" />
+    <BundleResource Include="Resources\rightpanelmenuicon3.png" />
+    <BundleResource Include="Resources\rightpanelmenuicon4.png" />
+    <BundleResource Include="Resources\rightpanelmenuicon5.png" />
+    <BundleResource Include="Resources\Sales-Order-32.png" />
+    <BundleResource Include="Resources\SamplelistArrow.png" />
+    <BundleResource Include="Resources\samplemenuicon.png" />
+    <BundleResource Include="Resources\Scan.png" />
+    <BundleResource Include="Resources\scandocument1.html" />
+    <BundleResource Include="Resources\seguisb.ttf" />
+    <BundleResource Include="Resources\settings-icon.png" />
+    <BundleResource Include="Resources\sidebarmenuicon.png" />
+    <BundleResource Include="Resources\silicone.jpg" />
+    <BundleResource Include="Resources\slidepagetype.css" />
+    <BundleResource Include="Resources\slider-bg.png" />
+    <BundleResource Include="Resources\slogan.jpg" />
+    <BundleResource Include="Resources\store_feature_graphic.png" />
+    <BundleResource Include="Resources\style.css" />
+    <BundleResource Include="Resources\SUCKHOE.png" />
+    <BundleResource Include="Resources\sung3-450x350.jpg" />
+    <BundleResource Include="Resources\swipeview.js" />
+    <BundleResource Include="Resources\tab1.html" />
+    <BundleResource Include="Resources\tab2.html" />
+    <BundleResource Include="Resources\tab3.html" />
+    <BundleResource Include="Resources\tab4.html" />
+    <BundleResource Include="Resources\tab5.html" />
+    <BundleResource Include="Resources\tab6COPY.html" />
+    <BundleResource Include="Resources\tailieuGTSP.html" />
+    <BundleResource Include="Resources\tailieusanpham.html" />
+    <BundleResource Include="Resources\thanhtuu.html" />
+    <BundleResource Include="Resources\THANHTUU-3.jpg" />
+    <BundleResource Include="Resources\tienich.html" />
+    <BundleResource Include="Resources\TIGIAHOIDOA.png" />
+    <BundleResource Include="Resources\toolbar.png" />
+    <BundleResource Include="Resources\toplogo.png" />
+    <BundleResource Include="Resources\tracnghiembaocao.html" />
+    <BundleResource Include="Resources\tracnghiembaocao.html.json" />
+    <BundleResource Include="Resources\tygiahoidoai.html" />
+    <BundleResource Include="Resources\typicons.svg" />
+    <BundleResource Include="Resources\typicons.ttf" />
+    <BundleResource Include="Resources\vechungtoi.html" />
+    <BundleResource Include="Resources\vertical-slider.css" />
+    <BundleResource Include="Resources\vertical-slider.js" />
+    <BundleResource Include="Resources\vision-icon.png" />
+    <BundleResource Include="Resources\Walk_Blue.png" />
+    <BundleResource Include="Resources\wallet-icon.png" />
+    <BundleResource Include="Resources\webkitmenuicon.png" />
+    <BundleResource Include="Resources\world-wide-web-technology-icons-28.png" />
+    <BundleResource Include="Resources\wpapplicationsmenuicon.png" />
+    <BundleResource Include="Resources\wpstartmenuicon1.png" />
+    <BundleResource Include="Resources\wpstartmenuicon2.png" />
+    <BundleResource Include="Resources\wpstartmenuicon3.png" />
+    <BundleResource Include="Resources\wpstartmenuicon4.png" />
+    <BundleResource Include="Resources\wpstartmenuicon5.png" />
+    <BundleResource Include="Resources\wpstartmenuicon6.png" />
+    <BundleResource Include="Resources\YOUTUBE.png" />
+    <BundleResource Include="Resources\Youtube_icon.png" />
+    <BundleResource Include="Resources\youtubeheader.png" />
+    <BundleResource Include="Resources\filelist.xml" />
+    <BundleResource Include="Resources\SC\About.html" />
+    <BundleResource Include="Resources\SC\about.png" />
+    <BundleResource Include="Resources\about.png" />
+    <BundleResource Include="Resources\date.png" />
+    <BundleResource Include="Resources\pick.png" />
+    <BundleResource Include="Resources\time.png" />
+    <BundleResource Include="Resources\ghethamdaily.png" />
+    <BundleResource Include="Resources\baocaocongviec.png" />
+    <BundleResource Include="Resources\chamcong.png" />
+    <BundleResource Include="Resources\tailieusanpham.png" />
+    <BundleResource Include="Resources\tracnghiem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="Services\iOSBaseUrl.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Entitlements.plist" />
+    <None Include="Info.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="Resources\Meta-Inf\" />
+    <Folder Include="Resources\Modules\" />
+    <Folder Include="Resources\SC\" />
+    <Folder Include="Assets.xcassets\tab1.imageset\" />
+    <Folder Include="Assets.xcassets\tab2.imageset\" />
+    <Folder Include="Assets.xcassets\tab3.imageset\" />
+    <Folder Include="Assets.xcassets\tab4.imageset\" />
+    <Folder Include="Assets.xcassets\tab5.imageset\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork" />
+    <ITunesArtwork Include="iTunesArtwork%402x" />
+  </ItemGroup>
+  <Import Project="..\HICHEM\HICHEM.projitems" Label="Shared" Condition="Exists('..\HICHEM\HICHEM.projitems')" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.0.121934\build\netstandard1.0\Xamarin.Forms.targets')" />
+  <Import Project="..\packages\Xamarin.Google.iOS.Maps.2.1.0.1\build\Xamarin.Google.iOS.Maps.targets" Condition="Exists('..\packages\Xamarin.Google.iOS.Maps.2.1.0.1\build\Xamarin.Google.iOS.Maps.targets')" />
+  <Import Project="..\packages\Xamarin.Build.Download.0.4.7\build\Xamarin.Build.Download.targets" Condition="Exists('..\packages\Xamarin.Build.Download.0.4.7\build\Xamarin.Build.Download.targets')" />
+</Project>

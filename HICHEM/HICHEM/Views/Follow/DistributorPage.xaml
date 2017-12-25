@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="HICHEM.Views.DistributorPage">
+    <ContentPage.Content>
+        <ScrollView BackgroundColor="#303030">
+            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Image x:Name="HeaderImage" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand" />
+                <Label HorizontalOptions="FillAndExpand" Text="Họ và tên:" TextColor="White" />
+                <Entry x:Name="hovaten" HorizontalOptions="FillAndExpand" />
+                <Label HorizontalOptions="FillAndExpand" Text="Nhu cầu:" TextColor="White" />
+                <StackLayout Orientation="Horizontal">
+                    <Entry x:Name="nhucau" HorizontalOptions="FillAndExpand"  HeightRequest="45" />
+                    <Button x:Name="btnNhucau" HorizontalOptions="End" BackgroundColor="Red" TextColor="White" Text="CHOOSE" HeightRequest="40" WidthRequest="70" />
+                </StackLayout>
+                <Label HorizontalOptions="FillAndExpand" TextColor="White" Text="Email:" />
+                <Entry x:Name="email" HorizontalOptions="FillAndExpand"  />
+                <Label HorizontalOptions="FillAndExpand" Text="Tel:" TextColor="White" />
+                <Entry x:Name="tel" HorizontalOptions="FillAndExpand"  />
+                <Label HorizontalOptions="FillAndExpand" Text="Đơn vị ( Nếu là tổ chức):" TextColor="White" />
+                <Entry x:Name="donvi" HorizontalOptions="FillAndExpand"  />
+                <Label HorizontalOptions="FillAndExpand" Text="Chức vụ (Nếu là tôt chức):" TextColor="White" />
+                <Entry x:Name="chucvu" HorizontalOptions="FillAndExpand"  />
+                <Label HorizontalOptions="FillAndExpand" Text="Địa chỉ làm đại lý:" TextColor="White" />
+                 <StackLayout Orientation="Horizontal">
+                    <Entry x:Name="diachidaily" HorizontalOptions="FillAndExpand"  HeightRequest="45"/>
+                    <Button x:Name="btnAddress" HorizontalOptions="End" TextColor="White" Image="pick.png" HeightRequest="45" WidthRequest="75" />
+                </StackLayout>
+                <Label HorizontalOptions="FillAndExpand" Text="Thông tin thêm:" TextColor="White" />
+                <Entry x:Name="moreinfor" HorizontalOptions="FillAndExpand" HeightRequest="100" />
+                <Button x:Name="submit" Text="GỬI THÔNG TIN" HorizontalOptions="FillAndExpand" BackgroundColor="Red" TextColor="White" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

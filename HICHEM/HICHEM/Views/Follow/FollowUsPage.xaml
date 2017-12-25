@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="HICHEM.Views.FollowUsPage">
+	<ContentPage.Content>
+
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <Image x:Name="LogoFU" HorizontalOptions="FillAndExpand" VerticalOptions="Start" />
+            <ListView x:Name = "ListFU" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" ItemsSource="{Binding Items}" ItemSelected="Handle_ItemSelected">
+             <ListView.ItemTemplate>
+                <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                <Image Margin="5" WidthRequest="30" HeightRequest="30" Source="{Binding Icon}" HorizontalOptions="Start" />
+                                <StackLayout Padding="10">
+                                    <Label Text="{Binding Text}" LineBreakMode="NoWrap" Style="{DynamicResource ListItemTextStyle}" FontSize="16" />
+                                    <Label Text="{Binding Description}" LineBreakMode="NoWrap" Style="{DynamicResource ListItemDetailTextStyle}" FontSize="13" />
+                                </StackLayout>
+                                <Image Margin="5" WidthRequest="20" HeightRequest="20" Source="menu-arrow.png" HorizontalOptions="EndAndExpand" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
